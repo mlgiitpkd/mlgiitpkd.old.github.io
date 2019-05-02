@@ -1,4 +1,4 @@
-# MQU Machine Learning Reading Group
+# MLG@IITPKD
 
 
 
