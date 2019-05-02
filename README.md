@@ -1,8 +1,9 @@
 # MLG@IITPKD
 
 
+##Machine Learning Reading Group - IIT Palakkad
 
-The reading group has been running weekly for several years within the
+The reading group will be  running weekly from May 06, 2019 several years within the
 [Department of Computing](http://comp.mq.edu.au), [Macquarie University](https://www.mq.edu.au/) (although we've only set
 up this github page in 2018).
 
