@@ -18,9 +18,9 @@ h3 { font-size: 1.7em; font-weight: normal; margin: 0 0 20px; }
 	#menu li a { float: left; margin: 0 0 0 20px; color: #888; }
 		#menu li a:hover { color: #555; }
 
-.post { clear: both;  padding: 30px 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 0 0 0; }
+.post { clear: both;  padding: 30px 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 0 0 10px; }
 	
-	.post .body {   }
+	.post .body { width: 960px; padding: 0 100px 0 30px;  }
 	
 .col { width: 900px; margin: 0 40px 30px 0; float: left; font-size: .9em; }
 	.col.last { margin-right: 0; }
