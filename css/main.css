@@ -20,7 +20,7 @@ h3 { font-size: 1.7em; font-weight: normal; margin: 0 0 20px; }
 
 .post { clear: both; padding: 30px 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 0 0 40px; }
 	
-	.post .body { float: right; width: 900px; padding: 0 100px 0 30px; border-left: 1px solid #ddd; border-left: 1px solid #ddd; }
+	.post .body { float: right; padding: 0 100px 0 30px; }
 	
 .col { width: 900px; margin: 0 40px 30px 0; float: left; font-size: .9em; }
 	.col.last { margin-right: 0; }
