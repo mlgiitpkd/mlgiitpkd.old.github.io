@@ -1,3 +1,27 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@mlgiitpkd
+
+0
+0
+
+    0
+
+mlgiitpkd/mlgiitpkd.github.io
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+Settings
+mlgiitpkd.github.io/journal_group/ics-web.css
+@mlgiitpkd mlgiitpkd Add files via upload 18b13ba 2 days ago
+400 lines (331 sloc) 6.09 KB
 /*
  ics-web.css
 */
@@ -13,7 +37,8 @@ a {
 }
 
 a:hover {
-	color: #009B3A;
+	/*color: #f39c12;*/
+	color:#f39c12;
 }
 
 #wrap {
@@ -118,7 +143,7 @@ a:hover {
 }
 
 .amenu-item a:hover {
-	background: #009B3A url("../img/ui/bg-header-GREEN.gif") repeat-x 0 0;
+	background: #f39c12 url("../img/ui/bg-header-GREEN.gif") repeat-x 0 0;
 	color: #ffffff !important;
 }
 
@@ -134,7 +159,7 @@ a:hover {
 }
 
 .amenu-item-highlight a {
-	background: #009B3A url("../img/ui/bg-header-GREEN.gif") repeat-x 0 0;
+	background: #f39c12 url("../img/ui/bg-header-GREEN.gif") repeat-x 0 0;
 	color: #ffffff !important;
 }
 
@@ -171,13 +196,13 @@ a:hover {
 }
 
 h2 {
-	color: #009B3A;
+	color: #f39c12;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: bold;
 	padding-bottom: 18px;
 	padding-top: 3px; /* ne */
-	border-top: 9px solid #009B3A;
+	border-top: 9px solid #f39c12;
         overflow: hidden;
 }
 
@@ -194,7 +219,7 @@ h2 {
 .amenu-heading-personal {
 	margin-top: 9px;
 	padding-bottom: 12px !important;
-	/* color: #009B3A !important; [is effective] */ 
+	/* color: #f39c12 !important; [is effective] */ 
         border-top: 0px !important;
         /* font-size: 18px [is effective] */
 }
@@ -213,7 +238,7 @@ h2 {
 
 /* DO NOT USE [settings by NE 2010-11-19]
 .OLD-amenu-extraitem { 
-	background-color: #009B3A; 
+	background-color: #f39c12; 
 	color: #FFFFFF; 
 	margin-top: 0px !important; 
 	padding-bottom: 5px !important; 
@@ -223,7 +248,7 @@ h2 {
 */ 
 
 .amenu-extraitem { /* by EL 2010-11-19 */
-	background-color: #009B3A; 
+	background-color: #f39c12; 
 	color: #FFFFFF; 
 	margin-top: 0px !important; 
         height: 31px !important; 
@@ -235,28 +260,28 @@ h2 {
 }
 
 h2 a {
-	color: #009B3A;
+	color: #f39c12;
 }
 
 h3 {
-	color: #009B3A;
+	color: #f39c12;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 18px;
 }
 
 h3 a {
-	color: #009B3A;
+	color: #f39c12;
 }
 
 h4 {
-	color: #009B3A;
+	color: #f39c12;
 	font-size: 12px;
 	line-height: 18px;
 }
 
 h4 a {
-	color: #009B3A;
+	color: #f39c12;
 }
 
 p {
@@ -356,7 +381,7 @@ iframe {
 
 .aside {
 	width: 342px;
-	border-top: 9px solid #009B3A;
+	border-top: 9px solid #f39c12;
 	padding-bottom: 18px;
 	padding-left: 36px;
 	float: right;
@@ -396,3 +421,18 @@ iframe {
 .narrow {
 	margin-right: 378px;
 }
+
+    © 2019 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
