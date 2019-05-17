@@ -6,16 +6,19 @@ overflow-y: scroll;
 }
 .header01
 {
-color: #009B3A;
+/*color: #009B3A;*/
+color:#f39c12;
 font-size: 18px;
 font-weight: bold;
 padding-bottom: 18px;
 padding-top: 3px; /* ne */
-border-top: 9px solid #009B3A;
+border-top: 9px solid #f39c12;
+
 }
 .header02
 {
-color: #009B3A;
+/*color: #009B3A;*/
+color:#f39c12;
 font-size: 18px;
 font-weight: bold;
 padding-bottom: 18px;
@@ -31,7 +34,7 @@ font-family: Arial, Helvetica, sans-serif;
 .databox
 {
 border-style:solid;
-border-color: #009B3A;
+border-color: #f39c12;
 border-width:2px;
 margin-left:50px;
 margin-right:50px;
@@ -45,9 +48,6 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-table.compact
-{
-padding-bottom: 5px
 }
 
 .pubcell
