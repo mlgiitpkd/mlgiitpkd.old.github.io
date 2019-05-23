@@ -1,0 +1,122 @@
+body
+{
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+overflow-y: scroll;
+}
+.header01
+{
+/*color: #009B3A;*/
+color:#f39c12;
+font-size: 18px;
+font-weight: bold;
+padding-bottom: 18px;
+padding-top: 3px; /* ne */
+border-top: 9px solid #f39c12;
+
+}
+.header02
+{
+/*color: #009B3A;*/
+color:#f39c12;
+font-size: 18px;
+font-weight: bold;
+padding-bottom: 18px;
+padding-top: 3px; /* ne */
+border: none;
+}
+p
+{
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.databox
+{
+border-style:solid;
+border-color: #f39c12;
+border-width:2px;
+margin-left:50px;
+margin-right:50px;
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+table.compact
+{
+padding-bottom: 5px
+}
+
+.pubcell
+{
+border: none;
+}
+
+.bibtext
+{
+font-size: 12px;
+}
+
+.bibheader
+{
+font-size: 12px;
+font-weight: bold;
+}
+
+.urlfield
+{
+color: #000000;
+font-weight: bold;
+}
+
+.author
+{
+color: #000000;
+/* font-weight: bold; */
+}
+
+.pubdate
+{
+color: #000000;
+/* font-weight: bold; */
+}
+
+.title
+{
+color: #000000;
+font-weight: bold;
+}
+
+.booktitle
+{
+color: #000000;
+font-style: italic;
+}
+
+.journal
+{
+color: #000000;
+font-style: italic;
+}
+
+.series
+{
+color: #000000;
+font-style: italic;
+}
+.pubheader
+{
+color: #f39c12;
+font-size: 18px;
+line-height: 32px;
+font-weight: bold;
+}
+#pubtable {
+border: none;
+}

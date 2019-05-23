@@ -1,0 +1,70 @@
+.aside {
+	border-top: none;
+	margin-top: 9px;
+}
+
+img.aside-subsection-picture {
+	width: 342px;
+	margin-top: -9px;
+} 
+
+
+ul li, ul.representative-publications li {
+	padding-bottom: 5px;
+}
+
+ul.jc li {
+	padding-bottom: 10px;
+}
+
+h2:not(:first-of-type), h2.sub {
+	margin-top: 20px;
+  border: none;
+}
+
+h2 {
+	overflow: visible;
+}
+
+h3 {
+	padding-bottom: 5px;
+}
+
+td h3 {
+	padding-bottom: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.bmenu-item {
+    padding: 3px 0 2px 0;
+}
+
+.pmlbmenu {
+    position: relative;
+    top: -26px;
+}
+
+.pmlbmenu li.bmenu-item {
+    padding-bottom: 3px;
+    float: none;
+    display: inline-block;
+}
+
+.pmlbmenu a {
+    height: 22px;
+    font-size: 12;
+    text-decoration: none;
+}
+
+/* This can be removed once there are no more submitted papers before 2017.
+   When you do that, also change from the publications.shtml
+   #set var="pub_startYear" value="2017" 
+*/
+
+tr.pubrow.y2016, tr.pubheader.y2016, tr.pubrow.y2015, tr.pubheader.y2015 {
+	display: none;
+}
+
