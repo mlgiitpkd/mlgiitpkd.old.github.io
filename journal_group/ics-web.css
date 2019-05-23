@@ -371,6 +371,37 @@ iframe {
 	margin-bottom: 0px; /* EL */
 }
 
+.col { width: 900px; margin: 0 40px 30px 0; float: left; font-size: .9em; }
+	.col.last { margin-right: 0; }
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+td, th {
+	padding: 0.5em;
+	border: 1px solid #CCC;
+	/*white-space: nowrap;
+	overflow: hidden;*/
+}
+
+/*th {
+   white-space: pre;
+}*/
+
+thead, tfoot {
+	background-color: #DDD;
+}
+
+tr.rowodd {
+	background-color: #FFF;
+}
+
+tr.roweven {
+	background-color: #F2F2F2;
+}
+
 /* OLD
 #footer {
 	color: #918c82;
