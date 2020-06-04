@@ -25,6 +25,49 @@
   border-radius: 100%;
   border: 5px solid #555;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+   border: 5px solid #555;
+ 
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 75%;
+  transition: 1.5s ease;
+  opacity:0;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
 </style>
 
 <link rel="stylesheet" type="text/css" href="machine_learning_css/reset-min.css" media="screen">
@@ -305,9 +348,25 @@ BTech project of Anish MM with joined supervision of Dr Deepak from Queens Unive
 </div>
 
 <h2><a name="Founders">Founding members of MLG-IITPKD</a></h2>
-<a href="https://nmrinl.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/mrinals.png?itok=rdq74_0h" alt="Avatar" class="avatar"></a>
-<a href="https://iitpkd.ac.in/people/sahely"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/Screenshot%20from%202018-01-22%2009-39-14.png?itok=pqD4vWfU" alt="Avatar" class="avatar"></a>
-<a href="https://iitpkd.ac.in/people/cnarayanan"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-07/chandru-photo.jpg?itok=cVw5O2FV" alt="Avatar" class="avatar"></a>
+	<div class="row">
+  		<div class="column">
+			<div class="container">
+				<a href="https://nmrinl.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/mrinals.png?itok=rdq74_0h" alt="Avatar" class="avatar"></a>
+				<div class="overlay">Dr. Mrinal Kanti Das</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+				<a href="https://iitpkd.ac.in/people/sahely"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/Screenshot%20from%202018-01-22%2009-39-14.png?itok=pqD4vWfU" alt="Avatar" class="avatar"></a>
+				<div class="overlay">Dr. Sahely Bhadra</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+				<a href="https://iitpkd.ac.in/people/cnarayanan"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-07/chandru-photo.jpg?itok=cVw5O2FV" alt="Avatar" class="avatar"></a>
+				<div class="overlay">Dr. Chandra Shekar Lakshminarayanan</div>
+			</div>
+		</div>
 </div> <!-- /#header -->
 
 <div class="section">
