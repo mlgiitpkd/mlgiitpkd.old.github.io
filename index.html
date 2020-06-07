@@ -69,6 +69,102 @@
 .container:hover .overlay {
   opacity: 1;
 }
+
+.vertical-menu {
+  width: 425px;
+  left:0;
+}
+
+.vertical-menu a {
+  background-color: #6fa8e8;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 0 5px 5px 0;
+  border-radius: 25px;
+  
+}
+
+
+.vertical-menu a.active {
+  background-color: #6fa8e8;
+  color: white;
+  
+}
+#mySidenav a {
+
+  position: absolute;
+  left: -400px;
+  transition: 1s;
+  padding: 20px;
+  width: 600px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#Deep {
+  top: 780px;
+  background-color: #4CAF50;
+}
+
+#Topic {
+  top: 840px;
+  background-color: #2196F3;
+}
+
+#Bayesian  {
+  top: 900px;
+  background-color: #f44336;
+}
+
+#Differentially {
+  top: 960px;
+  background-color: #555;
+}
+
+#Bayesian_Deep {
+  top: 1020px;
+  background-color: #e1f112;
+}
+
+#Optimization {
+  top: 1080px;
+  background-color: #12e7f1;
+}
+
+#Data_analysis  {
+  top: 1140px;
+  background-color:  #8c12f1;
+}
+
+#Network_analysis {
+  top: 1200px;
+  background-color:  #78bd8c;
+}
+
+
+#Bioinformatics {
+  top: 1260px;
+  background-color:  #f11263;
+}
+
+#Reinforcement_Learning {
+  top: 1320px;
+  background-color:  #e19833;
+}
+
+#Stochastic_Control  {
+  top: 1380px;
+  background-color:  #290e5f;
+}
 </style>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="machine_learning_css/reset-min.css" media="screen">
@@ -294,45 +390,25 @@ function showDivs(n) {
 Welcome to the Machine Learning group at IIT Palakkad.  
 	</p>			
 			
-<p>Our research areas include:<br>
-	 <ul>
-  <li>Deep Learning
-		 </li>
-		 <li> 
 
-    Topic models
+<div class="vertical-menu">
+  <a href="#" class="active">Research Areas</a></div>
+<div id="mySidenav" class="sidenav">
 
-   
-
-		 </li>
-  <li> Bayesian nonparametrics
-
-    
-		 </li>
-  <li>Differentially private Bayesian models
-
-    
-		 </li>
-<li> Bayesian Deep Learning
-		 </li>
-  <li>Optimization (robust optimization and convex optimization for large data)
-		 </li>
-  <li>Data analysis
-		 </li>		
-		 
-<li> Network analysis
-		 </li>
-  <li> Bioinformatics (micro-array data analysis and molecular network analysis) 
-		 </li>
-  <li>Reinforcement Learning
-		 </li>	
-<li> Stochastic Control
-		 </li>
+  <a href="#" id="Deep">Deep Learning </a>
+  <a href="#" id="Topic">Topic models </a>
+  <a href="#" id="Bayesian">Bayesian nonparametrics </a>
+  <a href="#" id="Differentially">Differentially private Bayesian models</a>
+  <a href="#" id="Bayesian_Deep">Bayesian Deep Learning </a>
+  <a href="#" id="Optimization">Optimization (robust optimization and convex optimization for large data) </a>
+  <a href="#" id="Data_analysis">Data analysis </a>
+  <a href="#" id="Bioinformatics">Bioinformatics (micro-array data analysis and molecular network analysis) </a>
+  <a href="#" id="Network_analysis">Network analysis</a>
+  <a href="#" id="Reinforcement_Learning">Reinforcement Learning  </a>
+  <a href="#" id="Stochastic_Control">Stochastic Control </a>
   
- 
-</ul> 
 
-
+</div>
 
 
 <!--<a name="News"></a>
