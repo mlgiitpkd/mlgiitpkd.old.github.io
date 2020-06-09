@@ -1,0 +1,534 @@
+<!--Custom style css-->
+<!-- images/aside/eyediag.jpg -->
+<!-- THIS FILE cs_config.shtml SHOULD BE PRESENT                         -->
+<!-- in the same directory as the header and footer files                -->
+<!--                                                                     -->
+<!-- Only the following SSI variables may (optionally) be set here:      -->
+<!--   ics_banner   (a value possibly set by the user is overridden)     -->
+<!--   ics_type   (a value possibly set by the user is overridden)       -->
+<!--   ics_am_htype   (a value possibly set by the user is overridden)   -->
+<!--   ics_default_img_src   (cannot be set by the user)                 -->
+<!--   ics_default_maintainer   (cannot be set by the user)              -->
+
+<!--  possibly setting ics_banner, ics_type, ics_am_htype -->
+<!--  and even ics_default_img_src, ics_default_maintainer -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 5px solid #555;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+   border: 5px solid #555;
+ 
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 75%;
+  transition: 1.5s ease;
+  opacity:0;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.vertical-menu {
+  width: 250px;
+  position: absolute;
+  left:0px;
+}
+
+.vertical-menu a {
+  background-color: #6fa8e8;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px !important;
+  border: 0 5px 5px 0;
+  border-radius: 25px;
+  
+}
+
+
+.vertical-menu a.active {
+  background-color: #6fa8e8;
+  color: black;
+  
+}
+#mySidenav a {
+
+  position: absolute;
+  left: -10px;
+  transition: 1s;
+  padding: 20px;
+  width: 250px;
+  text-decoration: none;
+  font-size: 15px !important;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#Deep {
+  top: 780px;
+  background-color: #4CAF50;
+}
+
+#Topic {
+  top: 845px;
+  background-color: #2196F3;
+}
+
+#Bayesian  {
+  top: 910px;
+  background-color: #f44336;
+}
+
+#Differentially {
+  top: 975px;
+  background-color: #555;
+}
+
+#Bayesian_Deep {
+  top: 1060px;
+  background-color: #e1f112;
+}
+
+#Optimization {
+  top: 1125px;
+  background-color: #12e7f1;
+}
+
+#Data_analysis  {
+  top: 1230px;
+  background-color:  #8c12f1;
+}
+
+#Network_analysis {
+  top: 1295px;
+  background-color:  #78bd8c;
+}
+
+#Reinforcement_Learning {
+  top: 1360px;
+  background-color:  #e19833;
+}
+
+#Stochastic_Control  {
+  top: 1425px;
+  background-color:  #555;
+}
+	
+#Bioinformatics {
+  top: 1490px;
+  background-color:  #f11263;
+}
+
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="machine_learning_css/reset-min.css" media="screen">
+
+
+
+
+<link rel="stylesheet" type="text/css" href="machine_learning_css/ics-web.css" media="screen">
+
+
+
+<link rel="stylesheet" type="text/css" href="machine_learning_css/ics-bibdb-web.css" media="screen">
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="machine_learning_css/pmlstyle.css" media="screen">
+
+
+<link rel="stylesheet" type="text/css" href="machine_learning_css/publications.css" media="screen">
+
+
+
+
+
+
+<script type="text/javascript" src="machine_learning_css/jquery-1.js"></script>
+<title>Machine Learning</title>
+
+
+<script charset="utf-8" src="machine_learning_css/momenttimelinetweet.js"></script><script charset="utf-8" src="machine_learning_css/timeline.js"></script></head>
+<body>
+<div id="wrap">
+<div id="header">
+
+
+
+<div class="header-top">
+<div class="header-multiling">
+</div>
+</div>
+  <div class="header-logoarea">
+  <img src="machine_learning_css/iitjjbanner.png" alt="IIT palakkad" usemap="#newbannermap"> 
+  </div>
+<map name="newbannermap">
+  <area shape="rect" coords="30,15,77,52" 
+  title="IIT Palakad" 
+  href="https://iitpkd.ac.in/" alt="" >
+  
+</map>
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+<h2 class="w3-center">Research initiatives taken at IIT Palakkad to combat Covid-19</h2>
+
+<div class="w3-content w3-display-container">
+ <a href="https://covid.iitpkd.ac.in/"> <img class="mySlides" src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/LeSi.png" class="img-responsive" style="width:100%"></a>
+ 
+  <a href="https://covid.iitpkd.ac.in/"><img class="mySlides" src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/xDet.png" class="img-responsive" style="width:100%"></a>
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<div class="section">
+<div class="aside">
+</div>
+
+<h2 class="amenu-heading">Machine Learning Group</h2>
+
+
+
+<ul class="amenu">
+
+
+
+
+
+
+
+<li class="amenu-item amenu-item-highlight">
+<a href="https://mlgiitpkd.github.io/" title="Home page of the group">Home</a>
+</li>
+
+
+
+
+
+<!--
+
+
+<li class="amenu-item">
+<a href="https://research.cs.aalto.fi/pml/research.shtml" title="Research in the group">Research</a>
+</li>
+
+
+
+-->
+
+
+
+
+<li class="amenu-item">
+<a href="personnel/personnel.html" title="Personnel in the group">Personnel</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li class="amenu-item">
+<a href="publications/publications.html" title="Publications by the group">Publications</a>
+</li>
+
+
+
+
+
+<li class="amenu-item">
+<a href="journal_group/journal_group.html" title="Journal club of the group">Journal Club</a>
+</li>
+
+<li class="amenu-item">
+<a href="https://creds-iitpkd.github.io" title="CREDS">CREDS</a>
+</li>
+
+	
+</ul> <!-- /.amenu -->
+
+
+
+
+<ul class="bmenu">
+
+
+<li class="bmenu-item">
+<a href="#About">About</a>
+</li>
+
+
+
+
+<li class="bmenu-item">
+<a href="#News">News</a>
+</li>
+	
+<li class="bmenu-item">
+<a href="#Founders">Founders</a>
+</li>
+	
+<li class="bmenu-item">
+<a href="#Research Scholars">Research Scholars</a>
+</li>
+</ul>  <!-- /.bmenu -->
+
+
+
+
+</div> <!-- /#header -->
+<div class="section">
+<div class="aside">
+</div>
+
+
+
+<!--
+<iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; padding: 0px; border: medium none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px; height: 4772.13px;" data-widget-id="profile:AaltoPML" title="Twitter Timeline" frameborder="0"></iframe> <script async="" src="Probabilistic%20Machine%20Learning_files/widgets.js" charset="utf-8"></script> 
+
+
+
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/AaltoPML" data-widget-id="609326889346428929">#AaltoPML Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+
+
+<!--
+<div class="align-right aside-picture-area">
+	<img class="aside-picture" src="images/aside/eyediag.jpg">
+</div>
+-->
+
+
+
+<!--</div>  /.aside -->
+		
+
+
+<h2><a name="About">Machine Learning Group</a></h2>
+
+<div style="max-width: 506px">
+
+<p>
+Welcome to the Machine Learning group at IIT Palakkad.  
+	</p>			
+			
+<!--
+<div class="vertical-menu">
+  <a href="#" class="active">Research Areas</a></div>
+<div id="mySidenav" class="sidenav">
+	
+  <a href="#" id="Deep"><b>Deep Learning </b></a>
+  <a href="#" id="Topic"><b>Topic models </b></a>
+  <a href="#" id="Bayesian"><b>Bayesian nonparametrics </b></a>
+  <a href="#" id="Differentially"><b>Differentially private Bayesian models</b></a>
+  <a href="#" id="Bayesian_Deep"><b>Bayesian Deep Learning </b></a>
+  <a href="#" id="Optimization"><b>Optimization (robust optimization and convex optimization for large data)</b> </a>
+  <a href="#" id="Data_analysis"><b>Data analysis</b> </a>
+  <a href="#" id="Bioinformatics"><b>Bioinformatics (micro-array data analysis and molecular network analysis)</b> </a>
+  <a href="#" id="Network_analysis"><b>Network analysis</b></a>
+  <a href="#" id="Reinforcement_Learning"><b>Reinforcement Learning  </b></a>
+  <a href="#" id="Stochastic_Control"><b>Stochastic Control </b></a>
+  
+
+</div>
+-->
+<div class="vertical-menu">
+	<a href="#" class="active"><b>Research Areas</b></a></div>
+<div id="mySidenav" class="sidenav">
+	
+  <a href="#" id="Deep"><b>Deep Learning </b></a>
+  <a href="#" id="Topic"><b>Topic models </b></a>
+  <a href="#" id="Bayesian"><b>Bayesian nonparametrics </b></a>
+  <a href="#" id="Differentially"><b>Differentially private Bayesian models</b></a>
+  <a href="#" id="Bayesian_Deep"><b>Bayesian Deep Learning </b></a>
+  <a href="#" id="Optimization"><b>Optimization (robust optimization and convex optimization for large data)</b> </a>
+  <a href="#" id="Data_analysis"><b>Data analysis</b> </a>
+  <a href="#" id="Bioinformatics"><b>Bioinformatics (micro-array data analysis and molecular network analysis)</b> </a>
+  <a href="#" id="Network_analysis"><b>Network analysis</b></a>
+  <a href="#" id="Reinforcement_Learning"><b>Reinforcement Learning  </b></a>
+  <a href="#" id="Stochastic_Control"><b>Stochastic Control </b></a>
+  
+
+</div>
+
+<!--<a name="News"></a>
+<h2 class="sub"> News</h2>-->
+<h2><a name="News">News</a></h2>
+<div style="max-width: 506px">
+<!-- To generate a new entry copy the HTML below
+
+<h4>dd.mm.yyyy</h4>
+<p>
+News text
+</p>
+
+-->
+
+<h4>03.01.2020</h4>
+<p>
+<a href="https://nmrinl.github.io">Dr. Mrinal Das</a> has received SERB start-up research grant to work on the project of "Bayesian Deep Models for Efficient Privacy-Aware Learning in the Era of Big Data and Personalization". 
+</p>
+	
+
+<h4>27.05.2019</h4>
+<p>
+BTech project of Anish MM with joined supervision of Dr Deepak from Queens University and <a href="https://iitpkd.ac.in/people/sahely">Dr. Sahely Bhadra</a> from IIT Palakkad has been accepted to be presented in Time series workshop of ICML 2019
+</p>
+<p>
+<a href="https://iitpkd.ac.in/people/sahely">Dr. Sahely Bhadra</a>  visited Aalto University in summer 2019 on Indo-Finish Mobility Grand from DST and Academy of Finland.
+<p>	
+
+
+
+
+
+<!--<h4><a href="old_news.shtml">Earlier News</a></h4>-->
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+
+
+</p>
+</div>
+
+</div> <!-- /#header -->
+<div class="section">
+<div class="aside">
+</div>
+
+<h2><a name="Founders">Founding members of MLG-IITPKD</a></h2>
+	<div class="row">
+  		<div class="column">
+			<div class="container">
+				<a href="https://nmrinl.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/mrinals.png?itok=rdq74_0h" alt="Avatar" class="avatar"></a>
+				<div class="overlay">Dr. Mrinal Kanti Das</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+				<a href="https://iitpkd.ac.in/people/sahely"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/Screenshot%20from%202018-01-22%2009-39-14.png?itok=pqD4vWfU" alt="Avatar" class="avatar"></a>
+				<div class="overlay">Dr. Sahely Bhadra</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+				<a href="https://iitpkd.ac.in/people/cnarayanan"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-07/chandru-photo.jpg?itok=cVw5O2FV" alt="Avatar" class="avatar"></a>
+				<div class="overlay">Dr. Chandra Shekar Lakshminarayanan</div>
+			</div>
+		</div>
+</div> <!-- /#header -->
+
+<div class="section">
+<div class="aside">
+</div>
+
+<h2><a name="Research Scholars">Research Scholars</a></h2>
+<a href="https://abilasha-s.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2019-03/2019-03-08-11-35-30-485_5.jpg?itok=E2QXCO31" alt="Avatar" class="avatar"></a>
+<a href="https://gauravjain10.github.io/profile/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-05/gj.jpg?itok=eTocUtHw" alt="Avatar" class="avatar"></a>
+<a href="https://brim28.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-01/IMG_20200113_232750.jpg?itok=ERxtHR9_" alt="Avatar" class="avatar"></a>
+<a href="https://shikha1795.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2019-08/IMG_20190819_155800.jpg?itok=bIcr-PWd" alt="Avatar" class="avatar"></a>
+
+</div> <!-- /#header -->
+	
+<div class="section">
+<div class="aside">
+</div>
+
+<!-- /.section -->
+<div id="footer">
+<p>
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Maintained by Machine Learning Group
+</p>
+</div> <!-- /#footer -->
+</div> <!-- /#wrap -->
+</body>
+</html>
+
+
+
+
