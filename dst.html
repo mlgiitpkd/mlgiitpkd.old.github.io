@@ -220,6 +220,11 @@ h3{
             margin-bottom: 20px;
         }
     </style>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
 </head>
 
 <body>
@@ -279,28 +284,46 @@ h3{
                 <div id="talksinfo">Date & Time : <a>30 October 2021 at 11 am</a></div>
                 <div id="talksinfo">Research Areas <a>Machine Learning, Text Mining, Pattern Recognition, Multiobjective Optimization, Bio-Text Mining, Bioinformatics, Soft Computing</a></div>
             	<div id="talksinfo">Abstract</div>
-			<p>A tremendous amount of text-content is available in the form of documents,microblogs, scientific articles, etc. and this is keep on growing exponentially over the time with the arrival of new data from multiple sources.<span id="dots">...</span><span id="more">In order to scan through such large volume of data,there is a requirement of developing some efficient text-mining techniques. Summarization techniques become popular in extracting relevant information from huge amount of data. Moreover development of some supervised technique requires huge amount of labeled data. The annotation of data for developing supervised information extraction systems is time-consumingand costly. In summarization, the aim is to generate compress, relevant, and concise information from the available data. Different facets of summarization, like document summarization, figure-summarization, microblog summarization, and multi-modal microblog summarization, will be discussed in the talk. The task of summarization is posed as multiobjective optimization problem where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously optimized. In order to measure these quality measures, different semantic similarity measures,textual entailment concepts are utilized. Extensive experimentations have verified that all our proposed methods outperform many other state-of-the-art methods when tested on task-related data-sets.</span></p><button onclick="myFunction()" id="myBtn">Read more</button>
+			<div class="container">
+				<div class="row">
+					<p>A tremendous amount of text-content is available in the form of documents,microblogs, scientific articles, etc. and this is keep on growing exponentially over the time 
+					with the arrival of new data from multiple sources.</p>
+
+				<div id="collapse" style="display:none">
+					<p>In order to scan through such large volume of data,there is a requirement of developing some efficient text-mining techniques. 
+					Summarization techniques become popular in extracting relevant information from huge amount of data. 
+					Moreover development of some supervised technique requires huge amount of labeled data. 
+					The annotation of data for developing supervised information extraction systems is time-consumingand costly. 
+					In summarization, the aim is to generate compress, relevant, and concise information from the available data. 
+					Different facets of summarization, like document summarization, figure-summarization, microblog summarization, and multi-modal microblog summarization, will be discussed in the talk. 
+					The task of summarization is posed as multiobjective optimization problem where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously optimized. 
+					In order to measure these quality measures, different semantic similarity measures,textual entailment concepts are utilized. 
+					Extensive experimentations have verified that all our proposed methods outperform many other state-of-the-art methods when tested on task-related data-sets.</p>
+				</div>
+				<a href="#collapse" class="nav-toggle">Read More</a>
+				</div>
+			</div>
 	    </div>
-        </div>
+     </div>
 
 	    
 <script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+$(document).ready(function () {
+    $('.nav-toggle').click(function () {
+        var collapse_content_selector = $(this).attr('href');
+        var toggle_switch = $(this);
+        $(collapse_content_selector).toggle(function () {
+            if ($(this).css('display') == 'none') {
+                toggle_switch.html('Read More');
+            } else {
+                toggle_switch.html('Read Less');
+            }
+        });
+    });
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
+});
 </script>
+	    
 </body>
 </html>
 
