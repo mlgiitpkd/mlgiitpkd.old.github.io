@@ -264,6 +264,19 @@ h3{
             <div id="talksinfo">About : <a>Head (AI) & Associate Professor, CSE, IIT Hyderabad</a></div>
             <div id="talksinfo">Date & Time : <a>28 August 2021 at 11 am</a></div>
             <div id="talksinfo">Research Areas : <a>Deep Learning, Machine Learning, Computer Vision, Optimization, Real-world Applications.</a></div>
+	    <div id="talksinfo">Abstract<p>The last decade has seen rapid strides in Artificial Intelligence (AI) moving from being a fantasy to a reality that is a part of each one of our lives, embedded in various technologies.
+		    <span id="dots">...</span><span id="more">
+		    A catalyst of this rapid uptake has been the enormous success of deep learning methods for addressing problems in various domains including computer vision, 
+		    natural language processing, and speech understanding. However, as AI makes its way into risk-sensitive and safety-critical applications such as healthcare, 
+		    aerospace and finance, it is essential for AI models to not only make predictions but also be able to explain their predictions, 
+		    and be robust to adversarial inputs. This talk will introduce the audience to this increasingly important area of explainable and robust AI, 
+		    as well as describe some of our recent research in this domain, especially the role of causality in explaining neural networks. 
+		    While existing methods for neural network attributions (for explanations) are largely statistical, 
+		    we propose a new attribution method for neural networks developed using first principles of causality (to the best of our knowledge, the first such). 
+		    This talk will also include an overview of our other recent efforts in exploring causal inference towards explainable neural networks.
+		    </span></p>
+		    <button onclick="myFunction()" id="myBtn">Read more</button></div>
+
         </div>
     </div>
     <div class="speaker">  
@@ -276,10 +289,45 @@ h3{
                 <div id="talksinfo">About : <a>Associate Professor, CSE, IIT Patna</a></div>
                 <div id="talksinfo">Date & Time : <a>30 October 2021 at 11 am</a></div>
                 <div id="talksinfo">Research Areas <a>Machine Learning, Text Mining, Pattern Recognition, Multiobjective Optimization, Bio-Text Mining, Bioinformatics, Soft Computing</a></div>
-            </div>
+            	<div id="talksinfo">Abstract<p>A tremendous amount of text-content is available in the form of documents,microblogs, scientific articles, etc. and this is keep on growing exponentially over the time with the arrival of new data from multiple sources.
+		    <span id="dots">...</span><span id="more">
+		    	In order to scan through such large volume of data,
+			there is a requirement of developing some efficient text-mining techniques. Summarization
+			techniques become popular in extracting relevant information from huge amount of data.
+			Moreover development of some supervised technique requires huge amount of labeled data. The
+			annotation of data for developing supervised information extraction systems is time-consuming
+			and costly. In summarization, the aim is to generate compress, relevant, and concise information
+			from the available data. Different facets of summarization, like document summarization, figure-
+			summarization, microblog summarization, and multi-modal microblog summarization, will be
+			discussed in the talk. The task of summarization is posed as multiobjective optimization problem
+			where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously
+			optimized. In order to measure these quality measures, different semantic similarity measures,
+			textual entailment concepts are utilized. Extensive experimentations have verified that all our
+			proposed methods outperform many other state-of-the-art methods when tested on task-related
+			data-sets.
+			</span></p>
+		    <button onclick="myFunction()" id="myBtn">Read more</button></div>
+	    </div>
         </div>
 
+	    
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 </body>
 </html>
 
