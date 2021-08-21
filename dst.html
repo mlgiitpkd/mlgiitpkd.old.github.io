@@ -9,10 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-<!--<script defer src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/script.js"></script>-->
+<link rel="stylesheet" href="multimodal.css">
 
-    <style>
+<style>
         * {
             box-sizing: border-box;
         }
@@ -245,7 +244,7 @@ div.date{
     margin-top: 20px ;
     margin-left: 600px;
     margin-right: 600px;   
-    background-color: #505050;
+    background-color: #404040;
     height: 40px;
     color: whitesmoke;
     margin-bottom: 10px;
@@ -309,20 +308,24 @@ div.speaker_info a{
     font-weight: normal;
 }
 
+div.zoomlink{
+    margin: 5px;
+    text-align: center;
+    display: block;
+    box-sizing:content-box;
+    justify-content: center;
+}
+div.zoomlink a{
+    font-size: 20px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
 div.popup{
     justify-content: center;
     text-align: center;
-	
 }
-div.popup.button{
-    transition-duration: 0.4s;
-}
-div.popup.button:hover{
-    background-color: #ecac20;
-    color: white;
-	
-	
-}
+
     </style>
 	
 </head>
@@ -363,6 +366,7 @@ div.popup.button:hover{
 <h4>Stay tuned for our upcoming talks</h4>
 <h4>Last Saturday of Every Month</h4>
 <h6>At 11AM IST</h6>
+<div class='zoomlink'><a href="https://zoom.us/j/91615547268">Join Meeting</a></div>
 
 <h4></h4>
 <h5></h5>
@@ -377,9 +381,16 @@ div.popup.button:hover{
 <div id="talksinfo"><a>Optimization, Real-world Applications.</a></div>
 </div>
 <div class='popup'>
-    <button type="button" data-modal-target="#modal" style='padding: 15px 15px;font-size:16px;'>Read Abstract</button>
-    <div class="modal" id="modal">
-    <div class="modal-header"><div class="title">Abstract</div><button data-close-button class="close-button">&times;</button></div>
+    <button class="myBtn_multi" 
+    style='padding: 15px 15px;font-size:16px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight:500 ;'>
+        Read Abstract</button>
+    <div class="modal modal_multi">
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <div class="modal-header"><div class="title">Explaining Neural Networks: A Causal Perspective</div></div>
     <div class="modal-body">
         The last decade has seen rapid strides in Artificial Intelligence (AI) moving from being a fantasy to a reality that is a part of each one of our lives, embedded in various technologies.
         A catalyst of this rapid uptake has been the enormous success of deep learning methods for addressing problems in various domains including computer vision, 
@@ -390,8 +401,9 @@ div.popup.button:hover{
         While existing methods for neural network attributions (for explanations) are largely statistical, 
         we propose a new attribution method for neural networks developed using first principles of causality (to the best of our knowledge, the first such). 
         This talk will also include an overview of our other recent efforts in exploring causal inference towards explainable neural networks.
-    </div></div><div id="overlay"></div></div><br><br>
-<!--
+    </div></div><div id="overlay"></div></div></div><br><br>
+
+
     <div class='date'>Sept 25th 2021</div>
     <div class="speaker_img"><img src="images/bs.png"width='250' alt='Avator' class='center'></div>
     <div class="speaker_info"><a href="https://sites.google.com/view/sambaranb/">Dr. Sambaran Bandyopadhyay</a></div>
@@ -401,25 +413,31 @@ div.popup.button:hover{
     <div id="talksinfo">Research Areas : <a>Representation Learning on Graphs, Graph Neural Networks, </a></div>
     <div id="talksinfo"><a>Machine Learning, Optimization, Computational Sustainability.</a></div>
 </div>
-	
     <div class='popup'>
-        <button type="button" data-modal-target="#modal" style='padding: 15px 15px;font-size:16px;'>Read Abstract</button>
-        <div class="modal" id="modal">
-        <div class="modal-header"><div class="title">Abstract</div><button data-close-button class="close-button">&times;</button></div>
-        <div class="modal-body">
-            Graph representation learning has received significant interest in the machine learning community. 
-            Different types of algorithms such as skip-gram based optimization, matrix factorization, deep-autoencoders and more recently,
-             graph neural networks are proposed in the literature. Analysis of outliers in a graph is important as all real-life networks 
-             contain outlier nodes. A (community) outlier in a graph is a node that violets the graph's overall community structure. 
-             Recent studies have shown that outlier nodes can affect the embeddings of other regular nodes in a graph. Further, 
-             their embeddings can get mixed easily with other regular nodes, making it difficult to detect them by post-processing.
-              So, it is crucial to reduce the effect of outlier nodes on the embeddings of other nodes in a graph and detect them in an 
-              integrated way.
-            In this talk, we characterize different types of outliers present in an attributed graph. 
-            We discuss some of our recently proposed approaches that integrate outlier detection and network embedding into a single 
-            framework and hence minimize the effect of outliers on the embeddings of regular nodes in a graph. We would also present 
-            experimental results to motivate the problem and show the usefulness of such integrated approaches
-</div></div><div id="overlay"></div></div><br><br>
+        <button class="myBtn_multi" 
+        style='padding: 15px 15px;font-size:16px; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight:500 ;'>
+            Read Abstract</button>
+        <div  class="modal modal_multi">
+            <div class="modal-content">
+                <span class="close close_multi">×</span>
+                <div class="modal-header"><div class="title">Graph Representation Learning in the Presence of Community Outliers</div></div>
+                <div class="modal-body">
+                Graph representation learning has received significant interest in the machine learning community. 
+                    Different types of algorithms such as skip-gram based optimization, matrix factorization, deep-autoencoders and more recently,
+                     graph neural networks are proposed in the literature. Analysis of outliers in a graph is important as all real-life networks 
+                     contain outlier nodes. A (community) outlier in a graph is a node that violets the graph's overall community structure. 
+                     Recent studies have shown that outlier nodes can affect the embeddings of other regular nodes in a graph. Further, 
+                     their embeddings can get mixed easily with other regular nodes, making it difficult to detect them by post-processing.
+                      So, it is crucial to reduce the effect of outlier nodes on the embeddings of other nodes in a graph and detect them in an 
+                      integrated way.
+                    In this talk, we characterize different types of outliers present in an attributed graph. 
+                    We discuss some of our recently proposed approaches that integrate outlier detection and network embedding into a single 
+                    framework and hence minimize the effect of outliers on the embeddings of regular nodes in a graph. We would also present 
+                    experimental results to motivate the problem and show the usefulness of such integrated approaches
+                </div></div><div id="overlay"></div></div></div><br><br>
 
 
 <div class='date'>Oct 30th 2021</div>
@@ -432,68 +450,123 @@ div.popup.button:hover{
 <div id="talksinfo"><a>Bio-Text Mining, Bioinformatics, Soft Computing.</a></div>
 </div>
 <div class='popup'>
-    <button type="button" data-modal-target="#modal" style='padding: 15px 15px;font-size:16px;'>Read Abstract</button>
-    <div class="modal" id="modal">
-    <div class="modal-header"><div class="title">Abstract</div><button data-close-button class="close-button">&times;</button></div>
-    <div class="modal-body">
-        A tremendous amount of text-content is available in the form of documents,
-microblogs, scientific articles, etc. and this is keep on growing exponentially over the time with
-the arrival of new data from multiple sources. In order to scan through such large volume of data,
-there is a requirement of developing some efficient text-mining techniques. Summarization
-techniques become popular in extracting relevant information from huge amount of data.
-Moreover development of some supervised technique requires huge amount of labeled data. The
-annotation of data for developing supervised information extraction systems is time-consuming
-and costly. In summarization, the aim is to generate compress, relevant, and concise information
-from the available data. Different facets of summarization, like document summarization, figure-
-summarization, microblog summarization, and multi-modal microblog summarization, will be
-discussed in the talk. The task of summarization is posed as multiobjective optimization problem
-where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously
-optimized. In order to measure these quality measures, different semantic similarity measures,
-textual entailment concepts are utilized. Extensive experimentations have verified that all our
-proposed methods outperform many other state-of-the-art methods when tested on task-related
-data-sets.
-</div></div><div id="overlay"></div></div><br><br>
--->
+    <button id="myBtn" 
+    style='padding: 15px 15px;font-size:16px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight:500 ;'>
+        Read Abstract</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">x</span>
+            <div class="modal-header"><div class="title">On Summarization Systems</div></div>
+            <div class="modal-body">
+            A tremendous amount of text-content is available in the form of documents,
+                microblogs, scientific articles, etc. and this is keep on growing exponentially over the time with
+                the arrival of new data from multiple sources. In order to scan through such large volume of data,
+                there is a requirement of developing some efficient text-mining techniques. Summarization
+                techniques become popular in extracting relevant information from huge amount of data.
+                Moreover development of some supervised technique requires huge amount of labeled data. The
+                annotation of data for developing supervised information extraction systems is time-consuming
+                and costly. In summarization, the aim is to generate compress, relevant, and concise information
+                from the available data. Different facets of summarization, like document summarization, figure-
+                summarization, microblog summarization, and multi-modal microblog summarization, will be
+                discussed in the talk. The task of summarization is posed as multiobjective optimization problem
+                where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously
+                optimized. In order to measure these quality measures, different semantic similarity measures,
+                textual entailment concepts are utilized. Extensive experimentations have verified that all our
+                proposed methods outperform many other state-of-the-art methods when tested on task-related
+                data-sets.
+            </div></div><div id="overlay"></div></div></div><br><br>
+
+
+
+<script>
+    // Get the modal
+    var modalparent = document.getElementsByClassName("modal_multi");
+
+    // Get the button that opens the modal
+    var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+    // Get the <span> element that closes the modal
+    var span_close_multi = document.getElementsByClassName("close_multi");
+
+    // When the user clicks the button, open the modal
+    function setDataIndex() {
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].setAttribute('data-index', i);
+            modalparent[i].setAttribute('data-index', i);
+            span_close_multi[i].setAttribute('data-index', i);
+        }
+    }
+
+
+
+    for (i = 0; i < modal_btn_multi.length; i++)
+    {
+        modal_btn_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span_close_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "none";
+        };
+
+    }
+
+    window.onload = function() {
+
+        setDataIndex();
+    };
+
+    window.onclick = function(event) {
+        if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+            modalparent[event.target.getAttribute('data-index')].style.display = "none";
+        }
+
+        // OLD CODE
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// Get the modal
+
+    var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+    var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+    btn.onclick = function() {
+
+        modal.style.display = "block";
+    }
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+
+</script>
+
 
 
 </body>
-	
-<script>
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
-
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
-
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
-
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
-
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-}
-
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-}
-</script>
 </html>
