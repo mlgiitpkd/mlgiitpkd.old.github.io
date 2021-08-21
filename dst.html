@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Research Talks</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<script defer src="script.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+        }
+
+    #iitpkdlogo {
+        height: 180px;
+        width: 180px;
+        top: 0px;
+        left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        float: left;
+        display: inline-block;
+    }
+    #credslogo {
+        height: 2%;
+        width: 2%;
+        top: 0px;
+        left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        float: left;
+        display: inline-block;
+    }
+
+    #heading {
+        height: 180px;
+        float: none;
+        margin-top: 0px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+        color: #63666A;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: inherit ;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 11mm;
+    }
+    #toolname {
+        height: 180px;
+        width: 180px;
+        top: 0px;
+        right: 0px;
+        float: right;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        display: inline-block;
+        color: #f39c12;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 40px;
+  background-color: #63666A;
+} 
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: #f39c12;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f39c12;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    /* width: 150px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: ' \2699';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.quote{
+    max-width: 1500px;
+    margin-top: 20px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px;
+    background: #e8e8e8 ;
+    border: 1px solid #c3c6cA;
+    color: #333c12;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.25em;
+    border-left-width: 10px;
+    border-left-color: #f9b332;
+}
+
+.credits {
+    font-weight: bold;
+    text-align: right;
+}
+
+.quote a{
+    text-align-last: justify ;
+    float: right;
+    color: #ecac20;
+    /*text-decoration: none;*/
+}
+
+h3{
+    font-size: 1.5em;
+    margin-top: 20px ;
+    margin-left: 50px;
+    color: #43464A;
+    margin-bottom: 20px;
+    text-align: center;
+}	
+
+h4{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:500;
+    text-align: center;    
+}
+
+h6{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:600;
+    text-align: center;    
+}
+
+h5{
+    background-color: #ecac20;
+    font-size: 1.75em;
+    margin-top: 15px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;   
+    height: 5px;
+    text-decoration: underline  ;
+}
+
+div.data{
+    text-align: center;
+}
+div.data a{
+    font-size: 1.75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div.date{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 20px ;
+    margin-left: 600px;
+    margin-right: 600px;   
+    background-color: #505050;
+    height: 40px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    text-align: center;  
+}
+
+div.speaker_img {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.speaker_img.img {
+    width: 200px;
+}
+.center{
+    border-radius: 50%;
+}
+
+div.speaker_info{
+	text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+div.speaker_info a{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+	
+.talks{
+    display: inline;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    padding: 2px;
+    border: 0px solid #c3c6cA;
+    color: #333c12;
+    font-family: 'Times New Roman';
+}
+#talksinfo
+{
+    font-size:18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#talksinfo a
+{
+    font-size:18px;
+    font-weight: normal;
+}
+
+div.popup{
+    justify-content: center;
+    text-align: center;
+	
+}
+div.popup.button{
+    transition-duration: 0.4s;
+}
+div.popup.button:hover{
+    background-color: #ecac20;
+    color: white;
+	
+	
+}
+    </style>
+	
+</head>
+
+<body>
+    <header>
+        <table>
+	<tr width=100%>
+	<td width=10%><a href="https://iitpkd.ac.in/"><img src="images/IitPkdLogo.png" width=150px height=150px></a></td>
+	<td width=100%><h1 id="heading">Florence Nightingale Data Science Talk Series</h1></td>
+	<td width=20%><a href="https://creds.iitpkd.ac.in/"><img src="images/CREDS_logo.png" width=100px height=100px></a></td>
+	</tr>
+        </table>
+	<myhr>
+   </header>
+   
+ <p align="center">
+	<a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+	</p>
+	
+   <div class="flex-container">
+ &nbsp;
+ <div class="topnav">
+<a href="https://creds.iitpkd.ac.in/">Home</a>
+<a href="https://mlgiitpkd.github.io/">About Us</a>
+<a href="journal_group/journal_group.html">Journal Group</a>
+
+</div>
+    </div>
+<div class = 'quote'>
+    So never lose an opportunity of urging a practical beginning, however small, 
+    for it is wonderful how often in such matters the mustard-seed germinates and roots itself. 
+    <a href="https://thisisstatistics.org/florence-nightingale-the-lady-with-the-data/#:~:text=Florence%20Ni\ghtingale%20established%20much%20needed,a%20lot%20of%20new%20data.&text=By%20using%20applie
+    d%20statistical%20methods,work%20in%20statistics%20saved%20lives."><div class='credits'> – Florence Nightingale </div></a>
+</div>
+
+<h3>Welcome Data Science Enthusiasts!!!</h3>
+<h4>Stay tuned for our upcoming talks</h4>
+<h4>Last Saturday of Every Month</h4>
+<h6>At 11AM IST</h6>
+
+<h4></h4>
+<h5></h5>
+
+<div class='date'>Aug 28th 2021</div>
+<div class="speaker_img"><img src="images/vnb.jpg"width='250' alt='Avator' class='center'></div>
+<div class="speaker_info"><a href="https://www.iith.ac.in/~vineethnb/research.html">Dr. Vineeth N Balasubramanian</a></div>
+<div class = 'talks'>
+<div id="talksinfo">Head (AI) & Associate Professor, CSE, IIT Hyderabad</div>
+<div id="talksinfo">Title: <a> Explaining Neural Networks: A Causal Perspective</a></div>
+<div id="talksinfo">Research Areas : <a>Deep Learning, Machine Learning, Computer Vision,</a></div>
+<div id="talksinfo"><a>Optimization, Real-world Applications.</a></div>
+</div>
+<div class='popup'>
+    <button type="button" data-modal-target="#modal" style='padding: 15px 15px;font-size:16px;'>Read Abstract</button>
+    <div class="modal" id="modal">
+    <div class="modal-header"><div class="title">Abstract</div><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">
+        The last decade has seen rapid strides in Artificial Intelligence (AI) moving from being a fantasy to a reality that is a part of each one of our lives, embedded in various technologies.
+        A catalyst of this rapid uptake has been the enormous success of deep learning methods for addressing problems in various domains including computer vision, 
+        natural language processing, and speech understanding. However, as AI makes its way into risk-sensitive and safety-critical applications such as healthcare, 
+        aerospace and finance, it is essential for AI models to not only make predictions but also be able to explain their predictions, 
+        and be robust to adversarial inputs. This talk will introduce the audience to this increasingly important area of explainable and robust AI, 
+        as well as describe some of our recent research in this domain, especially the role of causality in explaining neural networks. 
+        While existing methods for neural network attributions (for explanations) are largely statistical, 
+        we propose a new attribution method for neural networks developed using first principles of causality (to the best of our knowledge, the first such). 
+        This talk will also include an overview of our other recent efforts in exploring causal inference towards explainable neural networks.
+    </div></div><div id="overlay"></div></div><br><br>
+
+    <div class='date'>Sept 25th 2021</div>
+    <div class="speaker_img"><img src="images/bs.png"width='250' alt='Avator' class='center'></div>
+    <div class="speaker_info"><a href="https://sites.google.com/view/sambaranb/">Dr. Sambaran Bandyopadhyay</a></div>
+    <div class = 'talks'>
+    <div id="talksinfo">Applied Scientist II, Search Science and AI, Amazon, Bangalore</div>
+    <div id="talksinfo">Title: <a> Graph Representation Learning in the Presence of Community Outliers</a></div>
+    <div id="talksinfo">Research Areas : <a>Representation Learning on Graphs, Graph Neural Networks, </a></div>
+    <div id="talksinfo"><a>Machine Learning, Optimization, Computational Sustainability.</a></div>
+</div>
+    <div class='popup'>
+        <button type="button" data-modal-target="#modal" style='padding: 15px 15px;font-size:16px;'>Read Abstract</button>
+        <div class="modal" id="modal">
+        <div class="modal-header"><div class="title">Abstract</div><button data-close-button class="close-button">&times;</button></div>
+        <div class="modal-body">
+            Graph representation learning has received significant interest in the machine learning community. 
+            Different types of algorithms such as skip-gram based optimization, matrix factorization, deep-autoencoders and more recently,
+             graph neural networks are proposed in the literature. Analysis of outliers in a graph is important as all real-life networks 
+             contain outlier nodes. A (community) outlier in a graph is a node that violets the graph's overall community structure. 
+             Recent studies have shown that outlier nodes can affect the embeddings of other regular nodes in a graph. Further, 
+             their embeddings can get mixed easily with other regular nodes, making it difficult to detect them by post-processing.
+              So, it is crucial to reduce the effect of outlier nodes on the embeddings of other nodes in a graph and detect them in an 
+              integrated way.
+            In this talk, we characterize different types of outliers present in an attributed graph. 
+            We discuss some of our recently proposed approaches that integrate outlier detection and network embedding into a single 
+            framework and hence minimize the effect of outliers on the embeddings of regular nodes in a graph. We would also present 
+            experimental results to motivate the problem and show the usefulness of such integrated approaches
+</div></div><div id="overlay"></div></div><br><br>
+
+
+<div class='date'>Oct 30th 2021</div>
+<div class="speaker_img"><img src="images/sriparna.jpg"width='250' alt='Avator' class='center'></div>
+<div class="speaker_info"><a href="https://www.iitp.ac.in/~sriparna/index.html">Dr. Sriparna Saha</a></div>
+<div class = 'talks'>
+<div id="talksinfo">Associate Professor, CSE department, IIT Patna</div>
+<div id="talksinfo">Title: <a> On Summarization Systems</a></div>
+<div id="talksinfo">Research Areas : <a>Machine Learning, Text Mining, Pattern Recognition, Multiobjective Optimization, </a></div>
+<div id="talksinfo"><a>Bio-Text Mining, Bioinformatics, Soft Computing.</a></div>
+</div>
+<div class='popup'>
+    <button type="button" data-modal-target="#modal" style='padding: 15px 15px;font-size:16px;'>Read Abstract</button>
+    <div class="modal" id="modal">
+    <div class="modal-header"><div class="title">Abstract</div><button data-close-button class="close-button">&times;</button></div>
+    <div class="modal-body">
+        A tremendous amount of text-content is available in the form of documents,
+microblogs, scientific articles, etc. and this is keep on growing exponentially over the time with
+the arrival of new data from multiple sources. In order to scan through such large volume of data,
+there is a requirement of developing some efficient text-mining techniques. Summarization
+techniques become popular in extracting relevant information from huge amount of data.
+Moreover development of some supervised technique requires huge amount of labeled data. The
+annotation of data for developing supervised information extraction systems is time-consuming
+and costly. In summarization, the aim is to generate compress, relevant, and concise information
+from the available data. Different facets of summarization, like document summarization, figure-
+summarization, microblog summarization, and multi-modal microblog summarization, will be
+discussed in the talk. The task of summarization is posed as multiobjective optimization problem
+where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously
+optimized. In order to measure these quality measures, different semantic similarity measures,
+textual entailment concepts are utilized. Extensive experimentations have verified that all our
+proposed methods outperform many other state-of-the-art methods when tested on task-related
+data-sets.
+</div></div><div id="overlay"></div></div><br><br>
+
+
+
+</body>
+</html>
