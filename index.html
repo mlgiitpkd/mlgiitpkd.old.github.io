@@ -1,24 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>MLG IITPKD</title>
+    <title>Mlg IITPkd</title>
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<link rel="stylesheet" href="common.css">
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100%;
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        navl {
+<style>
+     /* Create two columns/boxes that floats next to each other */
+     navl {
             float: left;
             width: 40%;
             /* height: 2100px; */
@@ -55,17 +47,7 @@
             content: "";
             display: table;
             clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: #777;
-            padding: 1%;
-            text-align: left;
-            color: white;
-        }
-
-    
+        }    
      
         th {
             border: 1px solid #dddddd;
@@ -95,16 +77,6 @@
             margin: 8px;
         }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        /* @media (max-width: 600px) {
-
-            nav,
-            article {
-                width: 100%;
-                height: auto;
-            }
-        } */
-
         img:hover {
             opacity: 0.8;
         }
@@ -122,49 +94,17 @@
         ul {
             margin: 20px;
         }
-     #header_bar {
+
+        ul li a:hover{
+          color: #f39c12;
+        }
+        ul li a:active{
+          color: #f39c12;
+        }
+        #header_bar {
         height: 180px;
         width: 100%;
         display: inline;
-    }
-
-    #iitpkdlogo {
-        height: 180px;
-        width: 180px;
-        top: 0px;
-        left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        float: left;
-        display: inline-block;
-    }
-    #credslogo {
-        height: 2%;
-        width: 2%;
-        top: 0px;
-        left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        float: left;
-        display: inline-block;
-    }
-
-    #heading {
-        height: 180px;
-        float: none;
-        margin-top: 0px;
-        margin-right: 50px;
-        margin-bottom: 0px;
-        margin-left: 50px;
-        color: #63666A;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     #key {
         height: 50px;
@@ -180,35 +120,6 @@
         align-items: center;
     }
 
-    #toolname {
-        height: 180px;
-        width: 180px;
-        top: 0px;
-        right: 0px;
-        float: right;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        display: inline-block;
-        color: #f39c12;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
- .flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #f39c12;
-} 
-.avatar {
-  vertical-align: middle;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border: 5px solid #555;
-}
 .column {
   float: left;
   width: 33.3%;
@@ -309,207 +220,227 @@
   background-color: #6fa8e8;
   color: black;
   
+}	
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+p a:hover{
+    color: #f39c12;
+}
+
+h3 a:active {
+    color: #f39c12;
+}
+h3 a:hover {
+    color:#f39c12;
 }
 
     </style>
+	
 </head>
 
 <body>
     <header>
         <table>
 	<tr width=100%>
-	<td width=10%><img src="images/IitPkdLogo.png" width=150px height=150px></td>
-	<td width=100%><h1 id="heading">IIT Palakkad ML Group</h1></td>
-	<td width=20%><img src="images/CREDS_logo.png" width=100px height=100px></td>
+	<td width=10%><a href="https://iitpkd.ac.in/"><img src="images/IitPkdLogo.png" width=150px height=150px></a></td>
+	<td width=100%><h1 id="heading">IIT Palakkad Machine Learning Group</h1></td>
+	<td width=20%><a href="https://creds.iitpkd.ac.in/"><img src="images/CREDS_logo.png" width=100px height=100px></a></td>
 	</tr>
         </table>
 	<myhr>
    </header>
+	
    <div class="flex-container">
  &nbsp;
-    </div>
-    
-    <section>
-        <navl>
-	
-	<h2 ><a href="dst.html">Data Science Talk Series</a></h2>
-	<h2 ><a href="journal_group/journal_group.html">Research Talks</a></h2>
-	<h2>Research Areas</h2>
-	We work in theory as well as applications related machine learning and data science. Our expertise ranges from optimization, control to Bayesian models in theory, whereas Bioinformatics, education to zoonotic pandemics.
-	<div class="row" width=100%>
-  		<div class="bcolumn" align=center>
-		<h3 id="key">Optimization</h3>
-		<h3 id="key">Stochastic control</h3>
-		<h3 id="key">Bayesian models</h3>
-		<h3 id="key">Deep learning</h3>
-		<h3 id="key">Kernel methods</h3>
-		<h3 id="key">Reinforcement learning</h3>
-		<h3 id="key">Privacy-aware learning</h3>
-		<h3 id="key">Time-series modeling</h3>
-		</div>
-  		<div class="bcolumn" align=center>
-		<h3 id="key">Bioinformatics</h3>
-		<h3 id="key">Text analytics</h3>
-		<h3 id="key">Smart agriculture</h3> 
-		<h3 id="key">Agro-Economics</h3>
-		<h3 id="key">Weather modeling</h3>
-		<h3 id="key">Zoonotic pandemics</h3>
-		<h3 id="key">Network analysis</h3>
-		<h3 id="key">Education</h3>
-		</div>
-		
-	</div>
-	<br><br>
-	<h2>News</h2>
-	<ul>
-	<li><h5>22.02.2020</h5>Centre for Research and Education Data Science is lauched in IIT Palakkad. Our group is a key contributor in CREDS.</li>
-	<li><h5>03.01.2020</h5> Dr. Mrinal Das has received SERB start-up research grant to work on the project of "Bayesian Deep Models for Efficient Privacy-Aware Learning in the Era of Big Data and Personalization". </li>
-	<li><h5>27.05.2019</h5> BTech project of Anish MM with joined supervision of Dr Deepak from Queens University and Dr. Sahely Bhadra from IIT Palakkad has been accepted to be presented in Time series workshop of ICML 2019</li>
-	<li> <h5> 21.05.2019</h5> Dr. Sahely Bhadra visited Aalto University in summer 2019 on Indo-Finish Mobility Grand from DST and Academy of Finland. </li>
-	</ul>
+<div class="topnav"><a href="https://creds.iitpkd.ac.in/">CREDS</a><a href="index.html">About Us</a>
+    <a href="journal_group/journal_group.html">Journal Group</a><a href="dst.html">Data Science Talk Series</a></div></div>
 
-	<br><br>
-
-<h2>Publications</h2>
-	<ul>
-	<li><b>Large-Scale Sparse Kernel Canonical Correlation Analysis</b>.[<a href="http://proceedings.mlr.press/v97/uurtio19a/uurtio19a.pdf">Pdf</a>] Viivi Uurtio, Sahely Bhadra, Juho Rousu. Proceedings of the 36th International Conference on Machine Learning(ICML) 6383--6391,2019.</li><br>
-	<li><b>Sparse Non-Linear CCA through Hilbert-Schmidt Independence Criterion</b>.[<a href="https://aaltodoc.aalto.fi/handle/123456789/37006">Pdf</a>] Viivi Uurtio, Sahely Bhadra, Juho Rousu. IEEE International Conference on Data Mining(ICDM),2018.</li><br>
-	<li><b>Weight-Agnostic Hierarchical Stick-Breaking Process</b>.[<a href="https://nmrinl.github.io/icbk18.pdf">Pdf</a>] Mrinal Kanti Das, Chiranjib Bhattacharyya. IEEE International Conference on Big Knowledge, 2018.</li><br>
-	<li><b>SOPER: Discovering the influence of fashion and the many faces of User from Session logs using Stick Breaking Process</b>.[<a href="https://dl.acm.org/doi/10.1145/3132847.3133007">Pdf</a>] Lucky Dhakad, Mrinal Kanti Das, Chiranjib Bhattacharyya, Samik Datta, Mihir Kale, Vivek Mehta. International Conference on Information and Knowledge Management (CIKM), 2017.[Link]</li><br>
-	<li><b>Efficient differentially private learning improves drug sensitivity prediction</b>. [<a href="https://biologydirect.biomedcentral.com/articles/10.1186/s13062-017-0203-4">Pdf</a>]. Antti Honkela*, Mrinal Das*, Arttu Nieminen, Onur Dikmen, Samuel Kaski.Biology Direct, 2018 (* equal contribution)</li>
-	</ul>
-
-	
-
-	</navl>
-	<article>  
-	<p align="center">
-	We are part of <br>
-	<a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
-	</p>
-
-	<h2 id="heading">Research initiatives related to Covid</h2>
-	We have developed two web based tools: LeSi and xDet. LeSi is a Machine Learning based Learner Simulator for studying spread of Covid19 in India and various states. LeSi is based on 10-compartment pandemic model adapted from SEIR. LeSi allows users to learn location specific parameters from real cases. LeSi also allows users to run a pandemic simulator in forecasting mode. xDet is a Machine Learning based tool to classify X-ray images among various respiratory diseases. 
-<h3 align="center"><a href="https://creds.iitpkd.ac.in/covid19">LeSi & xDet</a></h3>
-
-	<h2 id="heading"><a name="Founders">Faculty members</a></h2>
-	<div class="row">
-  		<div class="column">
-			<div class="container">
-				<a href="https://nmrinl.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/mrinals.png?itok=rdq74_0h" alt="Avatar" class="avatar"></a>
-				<div class="name">Dr. Mrinal Kanti Das</div><div class="topic">Topic Models, Bayesian Deep Learning</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="container">
-				<a href="https://iitpkd.ac.in/people/sahely"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/Screenshot%20from%202018-01-22%2009-39-14.png?itok=pqD4vWfU" alt="Avatar" class="avatar"></a>
-				<div class="name">Dr. Sahely Bhadra</div><div class="topic">Multiview Machine learning with structured data, Bioinformatics</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="container">
-				<a href="https://iitpkd.ac.in/people/cnarayanan"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-07/chandru-photo.jpg?itok=cVw5O2FV" alt="Avatar" class="avatar"></a>
-				<div class="name">Dr. Chandra Shekar Lakshminarayanan</div><div class="topic">Reinforcement Learning, Stochastic Control, Deep Learning</div>
-			</div>
-		</div>
-	</div>
-	<br><br>
-	
-
-
-
-	<h2 id="heading"><a name="Research Scholars">Research Scholars</a></h2>
-    <div class="row">
-        <div class="column">
-          <div class="container">
-            <a href="https://abilasha-s.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2019-03/2019-03-08-11-35-30-485_5.jpg?itok=E2QXCO31" alt="Avatar" class="avatar"></a>
-            <div class="name">Abilasha S</div><div class="topic">Time Series Data Analysis</div><div class="timeline">Jul 2018 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
-          </div>
-      </div>
-      <div class="column">
-          <div class="container">
-            <a href="https://gauravjain10.github.io/resume/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-05/gj.jpg?itok=eTocUtHw" alt="Avatar" class="avatar"></a>
-            <div class="name">Gaurav Jain</div><div class="topic">Topic Models </div><div class="timeline">Jan 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-          </div>
-      </div>
-      <div class="column">
-          <div class="container">
-            <a href="https://rimmon63740771.wordpress.com/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-01/IMG_20200113_232750.jpg?itok=ERxtHR9_" alt="Avatar" class="avatar"></a>
-            <div class="name">Rimmon S. Bhosale</div><div class="topic">Causality and Interpretability in Computer Vision</div><div class="timeline">Jul 2019 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-          </div>
-      </div>
-      <div class="column">
-        <div class="container">
-            <a href="https://mshik.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2019-08/IMG_20190819_155800.jpg?itok=bIcr-PWd" alt="Avatar" class="avatar"></a>
-            <div class="name">Shikha Malick</div><div class="topic">Machine learning on graphs,Bioinformatics</div><div class="timeline">Jul 2019 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
-        </div>
-    </div>
-    <div class="column">
-        <div class="container">
-            <a href="https://iitpkd.ac.in/people/111914007"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-11/shabana_km.jpg?itok=tYyP54t0" alt="Avatar" class="avatar"></a>
-          <div class="name">Shabana K M</div><div class="topic">Artificial Intelligence in Education</div><div class="timeline">Jul 2019 - Present </div><div class="guide">Guide: Dr. Chandra Shekar Lakshminarayan</div>
-        </div>
-    </div>
-    <div class="column">
-      <div class="container">
-        <a href="https://iitpkd.ac.in/people/112014003"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2021-02/yumna_pic.PNG?itok=-jEYPrLr" alt="Avatar" class="avatar"></a>
-          <div class="name">Yumna Fatma Farooqi</div><div class="topic">Privacy Preserving Machine Learning</div><div class="timeline">Jul 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-      </div>
-  </div>
-  </div>
-  <br><br>	
-		
-	<h2 id="heading"><a name="Mtech Students">Mtech Students</a></h2>
-    <div class="row">
-        <div class="column">
-          <div class="container">
-            <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Chandu.jpg" alt="Avatar" class="avatar"> </a>
-            <div class="name">Narthu Chandrasekhar</div><div class="topic">Data Privacy in Machine Learning</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-          </div>
-      </div>
-      <div class="column">
-          <div class="container">
-            <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Pallavi.jpg" alt="Avatar" class="avatar"> </a>
-            <div class="name">Pallavi Hoge</div><div class="topic">Bioinformatics, Computer Vision</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
-          </div>
-      </div>
-      <div class="column">
-          <div class="container">
-            <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Adarsh.jpg" alt="Avatar" class="avatar"></a>
-            <div class="name">Adarsh Kumar</div><div class="topic">Causal Interpretability in Deep Learning</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-          </div>
-      </div>
-      <div class="column">
-        <div class="container">
-            <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Abhichal.jpg" alt="Avatar" class="avatar"></a>
-            <div class="name">Abhichal Rajput</div><div class="topic">Yield prediction using Computer vision</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
-        </div>
-    </div>
-    <div class="column">
-      <div class="container">
-          <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Sneha.jpg" alt="Avatar" class="avatar"></a>
-          <div class="name">Sneha Mohan</div><div class="topic">Computer vision, Time series</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
-      </div>
-  </div>
-  <div class="column">
-    <div class="container">
-        <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Vaishak.jpg" alt="Avatar" class="avatar"></a>
-        <div class="name">Vaishak Nair</div><div class="topic">Computer vision</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-    </div>
-</div>  
-<div class="column">
-  <div class="container">
-      <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/default.jpg" alt="Avatar" class="avatar"></a>
-      <div class="name">Abhinav Thakur</div><div class="topic">Bayesian Deep Learning</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
-  </div>
-</div>
-  </div>
-  <br><br>
-	</article>
-	<navr>
-	
-	</navr>
-     </section>
-</body>
-</html>
-
+    <div class="flex-container">
+        &nbsp;
+           </div>
+           
+           <section>
+               <navl>
+           <h2>Research Areas</h2>
+           We work in theory as well as applications related machine learning and data science. Our expertise ranges from optimization, control to Bayesian models in theory, whereas Bioinformatics, education to zoonotic pandemics.
+           <div class="row" width=100%>
+                 <div class="bcolumn" align=center>
+               <h3 id="key">Optimization</h3>
+               <h3 id="key">Stochastic control</h3>
+               <h3 id="key">Bayesian models</h3>
+               <h3 id="key">Deep learning</h3>
+               <h3 id="key">Kernel methods</h3>
+               <h3 id="key">Reinforcement learning</h3>
+               <h3 id="key">Privacy-aware learning</h3>
+               <h3 id="key">Time-series modeling</h3>
+               </div>
+                 <div class="bcolumn" align=center>
+               <h3 id="key">Bioinformatics</h3>
+               <h3 id="key">Text analytics</h3>
+               <h3 id="key">Smart agriculture</h3> 
+               <h3 id="key">Agro-Economics</h3>
+               <h3 id="key">Weather modeling</h3>
+               <h3 id="key">Zoonotic pandemics</h3>
+               <h3 id="key">Network analysis</h3>
+               <h3 id="key">Education</h3>
+               </div>
+               
+           </div>
+           <br><br>
+           <h2>News</h2>
+           <ul>
+           <li><h5>22.02.2020</h5>Centre for Research and Education Data Science is lauched in IIT Palakkad. Our group is a key contributor in CREDS.</li>
+           <li><h5>03.01.2020</h5> Dr. Mrinal Das has received SERB start-up research grant to work on the project of "Bayesian Deep Models for Efficient Privacy-Aware Learning in the Era of Big Data and Personalization". </li>
+           <li><h5>27.05.2019</h5> BTech project of Anish MM with joined supervision of Dr Deepak from Queens University and Dr. Sahely Bhadra from IIT Palakkad has been accepted to be presented in Time series workshop of ICML 2019</li>
+           <li> <h5> 21.05.2019</h5> Dr. Sahely Bhadra visited Aalto University in summer 2019 on Indo-Finish Mobility Grand from DST and Academy of Finland. </li>
+           </ul>
+       
+           <br><br>
+       
+       <h2>Publications</h2>
+           <ul>
+           <li><b>Large-Scale Sparse Kernel Canonical Correlation Analysis</b>.<a href="http://proceedings.mlr.press/v97/uurtio19a/uurtio19a.pdf">[Pdf]</a> Viivi Uurtio, Sahely Bhadra, Juho Rousu. Proceedings of the 36th International Conference on Machine Learning(ICML) 6383--6391,2019.</li><br>
+           <li><b>Sparse Non-Linear CCA through Hilbert-Schmidt Independence Criterion</b>.<a href="https://aaltodoc.aalto.fi/handle/123456789/37006">[Pdf]</a> Viivi Uurtio, Sahely Bhadra, Juho Rousu. IEEE International Conference on Data Mining(ICDM),2018.</li><br>
+           <li><b>Weight-Agnostic Hierarchical Stick-Breaking Process</b>.<a href="https://nmrinl.github.io/icbk18.pdf">[Pdf]</a> Mrinal Kanti Das, Chiranjib Bhattacharyya. IEEE International Conference on Big Knowledge, 2018.</li><br>
+           <li><b>SOPER: Discovering the influence of fashion and the many faces of User from Session logs using Stick Breaking Process</b>.<a href="https://dl.acm.org/doi/10.1145/3132847.3133007">[Pdf]</a> Lucky Dhakad, Mrinal Kanti Das, Chiranjib Bhattacharyya, Samik Datta, Mihir Kale, Vivek Mehta. International Conference on Information and Knowledge Management (CIKM), 2017.[Link]</li><br>
+           <li><b>Efficient differentially private learning improves drug sensitivity prediction</b>. <a href="https://biologydirect.biomedcentral.com/articles/10.1186/s13062-017-0203-4">[Pdf]</a>. Antti Honkela*, Mrinal Das*, Arttu Nieminen, Onur Dikmen, Samuel Kaski.Biology Direct, 2018 (* equal contribution)</li>
+           </ul>
+       
+           
+       
+           </navl>
+           <article>  
+           <p align="center">
+           We are part of <br>
+           <a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+           </p>
+       
+           <h2 id="heading">Research initiatives related to Covid</h2>
+           We have developed two web based tools: LeSi and xDet. LeSi is a Machine Learning based Learner Simulator for studying spread of Covid19 in India and various states. LeSi is based on 10-compartment pandemic model adapted from SEIR. LeSi allows users to learn location specific parameters from real cases. LeSi also allows users to run a pandemic simulator in forecasting mode. xDet is a Machine Learning based tool to classify X-ray images among various respiratory diseases. 
+       <h3 align="center"><a href="https://creds.iitpkd.ac.in/covid19">LeSi & xDet</a></h3>
+       
+           <h2 id="heading"><a name="Founders">Faculty members</a></h2>
+           <div class="row">
+                 <div class="column">
+                   <div class="container">
+                       <a href="https://nmrinl.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/mrinals.png?itok=rdq74_0h" alt="Avatar" class="avatar"></a>
+                       <div class="name">Dr. Mrinal Kanti Das</div><div class="topic">Topic Models, Bayesian Deep Learning</div>
+                   </div>
+               </div>
+               <div class="column">
+                   <div class="container">
+                       <a href="https://iitpkd.ac.in/people/sahely"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/Screenshot%20from%202018-01-22%2009-39-14.png?itok=pqD4vWfU" alt="Avatar" class="avatar"></a>
+                       <div class="name">Dr. Sahely Bhadra</div><div class="topic">Multiview Machine learning with structured data, Bioinformatics</div>
+                   </div>
+               </div>
+               <div class="column">
+                   <div class="container">
+                       <a href="https://iitpkd.ac.in/people/cnarayanan"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-07/chandru-photo.jpg?itok=cVw5O2FV" alt="Avatar" class="avatar"></a>
+                       <div class="name">Dr. Chandra Shekar Lakshminarayanan</div><div class="topic">Reinforcement Learning, Stochastic Control, Deep Learning</div>
+                   </div>
+               </div>
+           </div>
+           <br><br>
+           
+       
+       
+       
+           <h2 id="heading"><a name="Research Scholars">Research Scholars</a></h2>
+           <div class="row">
+               <div class="column">
+                 <div class="container">
+                   <a href="https://abilasha-s.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2019-03/2019-03-08-11-35-30-485_5.jpg?itok=E2QXCO31" alt="Avatar" class="avatar"></a>
+                   <div class="name">Abilasha S</div><div class="topic">Time Series Data Analysis</div><div class="timeline">Jul 2018 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
+                 </div>
+             </div>
+             <div class="column">
+                 <div class="container">
+                   <a href="https://gauravjain10.github.io/resume/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-05/gj.jpg?itok=eTocUtHw" alt="Avatar" class="avatar"></a>
+                   <div class="name">Gaurav Jain</div><div class="topic">Topic Models </div><div class="timeline">Jan 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+                 </div>
+             </div>
+             <div class="column">
+                 <div class="container">
+                   <a href="https://rimmon63740771.wordpress.com/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-01/IMG_20200113_232750.jpg?itok=ERxtHR9_" alt="Avatar" class="avatar"></a>
+                   <div class="name">Rimmon S. Bhosale</div><div class="topic">Causality and Interpretability in Computer Vision</div><div class="timeline">Jul 2019 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+                 </div>
+             </div>
+             <div class="column">
+               <div class="container">
+                   <a href="https://mshik.github.io/"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2019-08/IMG_20190819_155800.jpg?itok=bIcr-PWd" alt="Avatar" class="avatar"></a>
+                   <div class="name">Shikha Malick</div><div class="topic">Machine learning on graphs,Bioinformatics</div><div class="timeline">Jul 2019 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
+               </div>
+           </div>
+           <div class="column">
+               <div class="container">
+                   <a href="https://iitpkd.ac.in/people/111914007"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-11/shabana_km.jpg?itok=tYyP54t0" alt="Avatar" class="avatar"></a>
+                 <div class="name">Shabana K M</div><div class="topic">Artificial Intelligence in Education</div><div class="timeline">Jul 2019 - Present </div><div class="guide">Guide: Dr. Chandra Shekar Lakshminarayan</div>
+               </div>
+           </div>
+           <div class="column">
+             <div class="container">
+               <a href="https://iitpkd.ac.in/people/112014003"><img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2021-02/yumna_pic.PNG?itok=-jEYPrLr" alt="Avatar" class="avatar"></a>
+                 <div class="name">Yumna Fatma Farooqi</div><div class="topic">Privacy Preserving Machine Learning</div><div class="timeline">Jul 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+             </div>
+         </div>
+         </div>
+         <br><br>	
+               
+           <h2 id="heading"><a name="Mtech Students">Mtech Students</a></h2>
+           <div class="row">
+               <div class="column">
+                 <div class="container">
+                   <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Chandu.jpg" alt="Avatar" class="avatar"> </a>
+                   <div class="name">Narthu Chandrasekhar</div><div class="topic">Data Privacy in Machine Learning</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+                 </div>
+             </div>
+             <div class="column">
+                 <div class="container">
+                   <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Pallavi.jpg" alt="Avatar" class="avatar"> </a>
+                   <div class="name">Pallavi Hoge</div><div class="topic">Bioinformatics, Computer Vision</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
+                 </div>
+             </div>
+             <div class="column">
+                 <div class="container">
+                   <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Adarsh.jpg" alt="Avatar" class="avatar"></a>
+                   <div class="name">Adarsh Kumar</div><div class="topic">Causal Interpretability in Deep Learning</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+                 </div>
+             </div>
+             <div class="column">
+               <div class="container">
+                   <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Abhichal.jpg" alt="Avatar" class="avatar"></a>
+                   <div class="name">Abhichal Rajput</div><div class="topic">Yield prediction using Computer vision</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
+               </div>
+           </div>
+           <div class="column">
+             <div class="container">
+                 <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Sneha.jpg" alt="Avatar" class="avatar"></a>
+                 <div class="name">Sneha Mohan</div><div class="topic">Computer vision, Time series</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Sahely Bhadra</div>
+             </div>
+         </div>
+         <div class="column">
+           <div class="container">
+               <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Vaishak.jpg" alt="Avatar" class="avatar"></a>
+               <div class="name">Vaishak Nair</div><div class="topic">Computer vision</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+           </div>
+       </div>  
+       <div class="column">
+         <div class="container">
+             <a><img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/default.jpg" alt="Avatar" class="avatar"></a>
+             <div class="name">Abhinav Thakur</div><div class="topic">Bayesian Deep Learning</div><div class="timeline">Aug 2020 - Present </div><div class="guide">Guide: Dr. Mrinal Das</div>
+         </div>
+       </div>
+         </div>
+         <br><br>
+           </article>
+           <navr>
+           
+           </navr>
+            </section>
+       </body>
+       </html>
