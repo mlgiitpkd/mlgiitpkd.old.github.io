@@ -123,7 +123,7 @@
 .column {
   float: left;
   width: 33.3%;
-  padding: 10px;
+  padding: 5px;
 }
 .bcolumn {
   float: left;
@@ -221,12 +221,15 @@
   color: black;
   
 }	
-
+	
 p {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     
+}
+p a{
+  font-size: 20px;
 }
 p a:hover{
     color: #f39c12;
@@ -237,6 +240,27 @@ h3 a:active {
 }
 h3 a:hover {
     color:#f39c12;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+div.achivements{
+  text-align: center;
+}
+
+div.achivements a{
+  font-weight: bold;
+  color: #444;
+}
+div.achivements a:hover{
+  color: #f39c12;
+}
+div.achivements a:active{
+  color: #f39c12;
 }
 
     </style>
@@ -255,6 +279,10 @@ h3 a:hover {
 	<myhr>
    </header>
 	
+   <p>
+     We are part of <br>
+    <a href="https://creds.iitpkd.ac.in/" style="font-size: 18px;">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+    </p>
    <div class="flex-container">
  &nbsp;
 <div class="topnav"><a href="https://creds.iitpkd.ac.in/">CREDS</a><a href="index.html">About Us</a>
@@ -289,15 +317,20 @@ h3 a:hover {
                <h3 id="key">Network analysis</h3>
                <h3 id="key">Education</h3>
                </div>
-               
+
+               <h2 style="margin-top: 20px;">Research initiatives related to Covid</h2>
+               We have developed two web based tools: LeSi and xDet. LeSi is a Machine Learning based Learner Simulator for studying spread of Covid19 in India and various states. LeSi is based on 10-compartment pandemic model adapted from SEIR. LeSi allows users to learn location specific parameters from real cases. LeSi also allows users to run a pandemic simulator in forecasting mode. xDet is a Machine Learning based tool to classify X-ray images among various respiratory diseases. 
+           <h3 align="center"><a href="https://creds.iitpkd.ac.in/covid19">LeSi & xDet</a></h3>           
+              
            </div>
            <br><br>
            <h2>News</h2>
            <ul>
+           <li><h5> 27.08.2021</h5>Our Team, Rimmon Bhosale, Shikha Mallick and Gaurav Jain won first prize in the AI for Healthcare Hackathon conducted by SINE IIT Bombay & Derbi Foundation.</li>
            <li><h5>22.02.2020</h5>Centre for Research and Education Data Science is lauched in IIT Palakkad. Our group is a key contributor in CREDS.</li>
            <li><h5>03.01.2020</h5> Dr. Mrinal Das has received SERB start-up research grant to work on the project of "Bayesian Deep Models for Efficient Privacy-Aware Learning in the Era of Big Data and Personalization". </li>
            <li><h5>27.05.2019</h5> BTech project of Anish MM with joined supervision of Dr Deepak from Queens University and Dr. Sahely Bhadra from IIT Palakkad has been accepted to be presented in Time series workshop of ICML 2019</li>
-           <li> <h5> 21.05.2019</h5> Dr. Sahely Bhadra visited Aalto University in summer 2019 on Indo-Finish Mobility Grand from DST and Academy of Finland. </li>
+           <li><h5> 21.05.2019</h5> Dr. Sahely Bhadra visited Aalto University in summer 2019 on Indo-Finish Mobility Grand from DST and Academy of Finland. </li>
            </ul>
        
            <br><br>
@@ -310,21 +343,17 @@ h3 a:hover {
            <li><b>SOPER: Discovering the influence of fashion and the many faces of User from Session logs using Stick Breaking Process</b>.<a href="https://dl.acm.org/doi/10.1145/3132847.3133007">[Pdf]</a> Lucky Dhakad, Mrinal Kanti Das, Chiranjib Bhattacharyya, Samik Datta, Mihir Kale, Vivek Mehta. International Conference on Information and Knowledge Management (CIKM), 2017.[Link]</li><br>
            <li><b>Efficient differentially private learning improves drug sensitivity prediction</b>. <a href="https://biologydirect.biomedcentral.com/articles/10.1186/s13062-017-0203-4">[Pdf]</a>. Antti Honkela*, Mrinal Das*, Arttu Nieminen, Onur Dikmen, Samuel Kaski.Biology Direct, 2018 (* equal contribution)</li>
            </ul>
-       
-           
+              
        
            </navl>
            <article>  
-           <p align="center">
-           We are part of <br>
-           <a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
-           </p>
-       
-           <h2 id="heading">Research initiatives related to Covid</h2>
-           We have developed two web based tools: LeSi and xDet. LeSi is a Machine Learning based Learner Simulator for studying spread of Covid19 in India and various states. LeSi is based on 10-compartment pandemic model adapted from SEIR. LeSi allows users to learn location specific parameters from real cases. LeSi also allows users to run a pandemic simulator in forecasting mode. xDet is a Machine Learning based tool to classify X-ray images among various respiratory diseases. 
-       <h3 align="center"><a href="https://creds.iitpkd.ac.in/covid19">LeSi & xDet</a></h3>
-       
-           <h2 id="heading"><a name="Founders">Faculty members</a></h2>
+            <h2>Achievements</h2>
+            <div class="achivements">Rimmon Saloman Bhosale, Shikha Mallick, Gaurav Jain</div>
+            <div class="achivements">Won first prize in the 
+              <a href="https://derbifoundation.com/ai-for-healthcare-hackathon/">
+                AI for Healthcare Hackathon conducted by SINE IIT Bombay & Derbi Foundation</a>.</div>
+    
+           <h2><a name="Founders">Faculty members</a></h2>
            <div class="row">
                  <div class="column">
                    <div class="container">
@@ -345,12 +374,11 @@ h3 a:hover {
                    </div>
                </div>
            </div>
-           <br><br>
            
        
        
        
-           <h2 id="heading"><a name="Research Scholars">Research Scholars</a></h2>
+           <h2><a name="Research Scholars">Research Scholars</a></h2>
 			<div class="row">
 				<div class="column">
 					<div class="container">
@@ -397,9 +425,8 @@ h3 a:hover {
 						 </div>
 					</div>
 			</div>
-         <br><br>	
                
-           <h2 id="heading"><a name="Mtech Students">Mtech Students</a></h2>
+           <h2><a name="Mtech Students">Mtech Students</a></h2>
            <div class="row">
                <div class="column">
                  <div class="container">
