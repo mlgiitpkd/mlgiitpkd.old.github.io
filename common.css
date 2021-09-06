@@ -32,6 +32,19 @@ body {
     display: inline-block;
 }
 
+#asaplogo {
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    float: right;
+    display: inline-block;
+}
+
 #heading {
     height: 180px;
     float: none;
@@ -46,7 +59,7 @@ body {
     align-items: center;
     font-style: inherit ;
     font-family:'Times New Roman', Times, serif;
-    font-size: 11mm;
+    font-size: 10mm;
 }
 #toolname {
     height: 180px;
