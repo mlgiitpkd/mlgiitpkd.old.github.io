@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Research Talks</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="multimodal.css">
+<link rel="stylesheet" href="common.css">
+
+<style>
+ 
+.quote{
+    width:auto;
+    display:table;
+    margin-top: 20px ;
+    padding: 25px;
+    background: #e8e8e8 ;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #c3c6cA;
+    color: #333c12;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.25em;
+    border-left-width: 10px;
+    border-left-color: #f9b332;
+}
+
+.credits {
+    font-weight: bold;
+    text-align: right;
+}
+
+.quote a{
+    text-align-last: justify ;
+    float: right;
+    color: #ecac20;
+    /*text-decoration: none;*/
+}
+	
+.quote a:active {
+    color: #43464A;
+}
+
+.quote a:hover {
+    color:#43464A;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-top: 20px ;
+    margin-left: 50px;
+    color: #43464A;
+    margin-bottom: 20px;
+    text-align: center;
+}	
+
+h4{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:500;
+    text-align: center;    
+}
+
+h6{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:600;
+    text-align: center;    
+}
+
+h5{
+    background-color: #ecac20;
+    font-size: 1.75em;
+    margin-top: 15px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;   
+    height: 5px;
+    text-decoration: underline  ;
+}
+
+div.data{
+    text-align: center;
+}
+div.data a{
+    font-size: 1.75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div.date{
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    padding-bottom: 5px;
+    margin-top: 20px ;
+    margin-left: 600px;
+    margin-right: 600px;   
+    background-color: #404040;
+    height: 100%;
+    color: #f39c12;
+    text-align: center; 
+	
+}
+
+div.speaker_img {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.speaker_img.img {
+    width: 200px;
+}
+.center{
+    border-radius: 50%;
+}
+
+div.speaker_info{
+	text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+div.speaker_info a{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+	
+div.speaker_info a:active {
+    color: #f9b332;
+}
+
+div.speaker_info a:hover {
+    color: #f39c12;
+}
+	
+.talks{
+    display: inline;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    padding: 2px;
+    border: 0px solid #c3c6cA;
+    color: #333c12;
+    font-family: 'Times New Roman';
+}
+#talksinfo
+{
+    font-size:18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#talksinfo a
+{
+    font-size:18px;
+    font-weight: normal;
+}
+
+div.zoomlink{
+    margin: 5px;
+    text-align: center;
+    display: block;
+    box-sizing:content-box;
+    justify-content: center;
+}
+div.zoomlink a{
+    font-size: 20px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+div.zoomlink a:active{
+    color: #404040;
+}
+
+div.zoomlink a:hover{
+    color: #404040;
+}	
+
+div.popup{
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 3px;
+  background-color: #202020;
+  color: white;
+  font-size: 25px;
+  text-decoration:wavy;
+  font-weight: bold;
+}
+
+footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a{
+    font-size: 20px;
+    font-weight: normal;
+    color: #c3c6cA;
+}
+
+footer a:active{
+    color: #f9b332;
+}
+
+footer a:hover{
+    color: #f9b332;
+}		
+	
+footer div.popup button.myBtn_multi{
+    padding: 10px 10px; font-size:20px;  font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f39c12;
+        background-color: #202020; 
+        border: 2px solid; border-color: #f39c12;
+}
+
+footer div.popup button.myBtn_multi:hover{
+    color: #c3c6cA;
+    border-color: #c3c6cA;
+}	
+	
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+p a{
+  font-size: 20px;
+}
+p a:hover{
+    color: #f39c12;
+}
+	
+counter {
+    margin-right: 50px;
+    padding: 5px;
+	font-size: 25px;
+	height: 100%;
+	color: #f39c12;
+	text-align: center; 
+	background-color: #404040;
+}
+
+div.counter_align{
+	font-size: 25px;
+    margin-top:20px;
+	text-align:right;
+	}
+	
+#credsids{
+	float: left;    
+	margin: 0 0 0 15px;
+	}
+	
+
+
+	#navbar img {
+		display: block;
+		width: 200px;
+		height: 200px;
+		margin: auto;
+
+	}
+
+#ps {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+	margin-right:0px;
+    
+}
+div.figure1 {
+  border-top: none;
+  padding-top: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+  margin-right:90px;
+}
+div.figure2 {
+  border-top: none;
+  padding-top: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+  margin-right:70px;
+}
+	
+    </style>
+	
+</head>
+
+<body>
+    <header>
+	<!--<div id="ps">Supported by</div>-->
+    <table>
+	<tr width=100%>
+	<td width=20%><a href="https://iitpkd.ac.in/"><img src="images/IitPkdLogo.png" width=200px height=200px></a></td>
+	<td width=100%><h1 id="heading">Florence Nightingale Data Science Talk Series</h1></td>
+	<div class="figure1"><figcaption>Supported by </figcaption></div>
+	<br><br>
+	<div class="figure2"><figcaption>CREDS and ASAP</figcaption></div>
+	<br><br>
+	<td width=20%><a href="https://creds.iitpkd.ac.in/"><img src="images/CREDS_logo.png" width=100px height=100px></a></td>
+	<td width=20%><a href="https://asapkerala.gov.in/"><img src="images/ASAP.png" width=250px height=150px id="asaplogo"></a></td>
+	</tr>
+    </table>
+	
+	<myhr>
+   </header>
+   
+   <!--<p>
+    We are part of <br>
+   <a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+   </p>-->
+   <div class="flex-container">
+ &nbsp;
+<div class="topnav"><a href="https://creds.iitpkd.ac.in/">CREDS</a><a href="index.html">Organizers</a>
+    <a href="dst.html">Data Science Talk Series</a>
+	<a href="dst_past.html">Past Talk Sessions</a></div></div>
+
+    <div class="flex-container">
+        &nbsp;
+           </div>
+
+</div>
+    </div>
+<div class = 'quote'>
+    So never lose an opportunity of urging a practical beginning, however small, 
+    for it is wonderful how often in such matters the mustard-seed germinates and roots itself. 
+    <a href="https://thisisstatistics.org/florence-nightingale-the-lady-with-the-data/#:~:text=Florence%20Ni\ghtingale%20established%20much%20needed,a%20lot%20of%20new%20data.&text=By%20using%20applie
+    d%20statistical%20methods,work%20in%20statistics%20saved%20lives."><div class='credits'> – Florence Nightingale </div></a>
+</div>
+
+<div class="counter_align">Countdown: <counter id="demo"></counter></div>
+<h3>Welcome Data Science Enthusiasts!!!</h3>
+<h4>Stay tuned for our upcoming talks</h4>
+<h4>Last Saturday of Every Month</h4>
+<h6>11 AM IST</h6>
+<div class='zoomlink'><a href="https://zoom.us/j/91615547268">Zoom Meeting Link</a></div>
+
+<h4></h4>
+<h5></h5>
+
+
+    <div class='date'>Sept 25th 2021</div>
+    <div class="speaker_img"><img src="images/bs.png"width='250' alt='Avator' class='center'></div>
+    <div class="speaker_info"><a href="https://sites.google.com/view/sambaranb/">Dr. Sambaran Bandyopadhyay</a></div>
+    <div class = 'talks'>
+    <div id="talksinfo">Applied Scientist, Amazon Science, Bangalore</div>
+    <div id="talksinfo">Title: <a> Graph Representation Learning in the Presence of Community Outliers</a></div>
+    <div id="talksinfo">Research Areas : <a>Representation Learning on Graphs, Graph Neural Networks, </a></div>
+    <div id="talksinfo"><a>Machine Learning, Optimization, Computational Sustainability.</a></div>
+</div>
+    <div class='popup'>
+        <button class="myBtn_multi" 
+        style='padding: 15px 15px;font-size:16px; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight:500 ;'>
+            Read Abstract</button>
+        <div  class="modal modal_multi">
+            <div class="modal-content">
+                <span class="close close_multi">×</span>
+                <div class="modal-header"><div class="title">Graph Representation Learning in the Presence of Community Outliers</div></div>
+                <div class="modal-body">
+                Graph representation learning has received significant interest in the machine learning community. 
+                    Different types of algorithms such as skip-gram based optimization, matrix factorization, deep-autoencoders and more recently,
+                     graph neural networks are proposed in the literature. Analysis of outliers in a graph is important as all real-life networks 
+                     contain outlier nodes. A (community) outlier in a graph is a node that violets the graph's overall community structure. 
+                     Recent studies have shown that outlier nodes can affect the embeddings of other regular nodes in a graph. Further, 
+                     their embeddings can get mixed easily with other regular nodes, making it difficult to detect them by post-processing.
+                      So, it is crucial to reduce the effect of outlier nodes on the embeddings of other nodes in a graph and detect them in an 
+                      integrated way.
+                    In this talk, we characterize different types of outliers present in an attributed graph. 
+                    We discuss some of our recently proposed approaches that integrate outlier detection and network embedding into a single 
+                    framework and hence minimize the effect of outliers on the embeddings of regular nodes in a graph. We would also present 
+                    experimental results to motivate the problem and show the usefulness of such integrated approaches
+                </div></div><div id="overlay"></div></div></div><br><br>
+
+
+<div class='date'>Oct 30th 2021</div>
+<div class="speaker_img"><img src="images/sriparna.jpg"width='250' alt='Avator' class='center'></div>
+<div class="speaker_info"><a href="https://www.iitp.ac.in/~sriparna/index.html">Dr. Sriparna Saha</a></div>
+<div class = 'talks'>
+<div id="talksinfo">Associate Professor, CSE department, IIT Patna</div>
+<div id="talksinfo">Title: <a> On Summarization Systems</a></div>
+<div id="talksinfo">Research Areas : <a>Machine Learning, Text Mining, Pattern Recognition, Multiobjective Optimization, </a></div>
+<div id="talksinfo"><a>Bio-Text Mining, Bioinformatics, Soft Computing.</a></div>
+</div>
+<div class='popup'>
+    <button id="myBtn" 
+    style='padding: 15px 15px;font-size:16px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight:500 ;'>
+        Read Abstract</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">x</span>
+            <div class="modal-header"><div class="title">On Summarization Systems</div></div>
+            <div class="modal-body">
+            A tremendous amount of text-content is available in the form of documents,
+                microblogs, scientific articles, etc. and this is keep on growing exponentially over the time with
+                the arrival of new data from multiple sources. In order to scan through such large volume of data,
+                there is a requirement of developing some efficient text-mining techniques. Summarization
+                techniques become popular in extracting relevant information from huge amount of data.
+                Moreover development of some supervised technique requires huge amount of labeled data. The
+                annotation of data for developing supervised information extraction systems is time-consuming
+                and costly. In summarization, the aim is to generate compress, relevant, and concise information
+                from the available data. Different facets of summarization, like document summarization, figure-
+                summarization, microblog summarization, and multi-modal microblog summarization, will be
+                discussed in the talk. The task of summarization is posed as multiobjective optimization problem
+                where multiple quality measures like cohesion, readability, anti-redundancy, are simultaneously
+                optimized. In order to measure these quality measures, different semantic similarity measures,
+                textual entailment concepts are utilized. Extensive experimentations have verified that all our
+                proposed methods outperform many other state-of-the-art methods when tested on task-related
+                data-sets.
+            </div></div><div id="overlay"></div></div></div><br><br>
+	    
+            <div class='date'>Nov 27th 2021</div>
+            <div class="speaker_img"><img src="https://i1.rgstatic.net/ii/profile.image/932318147526659-1599293376895_Q512/Siddhartha-Mukherjee-4.jpg"width='250' alt='Avator' class='center'></div>
+            <div class="speaker_info"><a href="https://www.linkedin.com/in/siddharthamukherjee/">Siddhartha Mukherjee</a></div>
+            <div class = 'talks'>
+            <div id="talksinfo">Director, Samsung R&D Institute,India-Bangalore</div>
+            <!--<div id="talksinfo">Title: <a> Graph Representation Learning in the Presence of Community Outliers</a></div> -->
+            <div id="talksinfo">Research Areas : <a>Natural Language Processing, Machine Learning, Deep Learning,</a></div>
+            <div id="talksinfo"><a>Image Processing, Human Computer Interaction.</a></div>
+        </div>
+           <!-- <div class='popup'>
+                <button class="myBtn_multi" 
+                style='padding: 15px 15px;font-size:16px; 
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 18px;
+                font-weight:500 ;'>
+                    Read Abstract</button>
+                <div  class="modal modal_multi">
+                    <div class="modal-content">
+                        <span class="close close_multi">×</span>
+                        <div class="modal-header"><div class="title">Title</div></div>
+                        <div class="modal-body">
+                       Data
+                        </div></div><div id="overlay"></div></div></div><br><br> -->
+
+<br><br><br><br><br><br><br><br><br><br>
+<div class="col">
+		<h3><a href="dst_past.html">Past Talk Archives</a></h3>
+</div>
+<br>
+
+<hr>
+<footer>
+    <p>Florence Nightingale</p><hr style="margin-left: 50px; margin-right: 50px; size: 3px;"><br>
+    <div class='popup'>
+        <button class="myBtn_multi">The Lady with the Data</button>
+        <div  class="modal modal_multi">
+            <div class="modal-content">
+                <span class="close close_multi">×</span>
+                <div class="modal-header"><div class="title" style="color: black; font-weight: bold; font-size: 20px;">
+                    The Lady with the data</div></div>
+                <div class="modal-body" style="color: #23262A; font-weight: normal; font-size: 16px;">
+                When you think of Florence Nightingale, you probably imagine a nurse with a lamp, comforting soldiers. 
+                Indeed, Florence is considered the mother of modern nursing. But she also made serious contributions in 
+                statistical data analysis, and used the diagram named after her, the Nightingale rose diagram, to convince 
+                the British Parliament to enact sanitation reforms that saved hundreds of thousands, if not millions, of lives. <br>
+                During the Crimean war, Florence worked around the clock as head nurse in an overcrowded field hospital. 
+                But she also found time to create graphs to illustrate the terrible conditions of that field hospital to 
+                members of British Parliament. The sanitation reforms she led greatly improved the life of the soldiers in battle, 
+                and widespread adoption of her hygienic practices vastly reduced mortality rates of humanity in general.
+                </div></div><div id="overlay"></div></div></div>
+
+    <p><a href="https://www.health.org.uk/news-and-comment/blogs/an-unlikely-data-pioneer-florence-nightingale">
+        An unlikely data pioneer: four lessons for today’s data analysts from Florence Nightingale</a></p>
+    </footer>
+	    
+	    
+
+<script>
+    // Get the modal
+    var modalparent = document.getElementsByClassName("modal_multi");
+
+    // Get the button that opens the modal
+    var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+    // Get the <span> element that closes the modal
+    var span_close_multi = document.getElementsByClassName("close_multi");
+
+    // When the user clicks the button, open the modal
+    function setDataIndex() {
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].setAttribute('data-index', i);
+            modalparent[i].setAttribute('data-index', i);
+            span_close_multi[i].setAttribute('data-index', i);
+        }
+    }
+
+
+
+    for (i = 0; i < modal_btn_multi.length; i++)
+    {
+        modal_btn_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span_close_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "none";
+        };
+
+    }
+
+    window.onload = function() {
+
+        setDataIndex();
+    };
+
+    window.onclick = function(event) {
+        if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+            modalparent[event.target.getAttribute('data-index')].style.display = "none";
+        }
+
+        // OLD CODE
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// Get the modal
+
+    var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+    var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+    btn.onclick = function() {
+
+        modal.style.display = "block";
+    }
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+</script>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 25, 2021 11:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+</body>
+</html>
