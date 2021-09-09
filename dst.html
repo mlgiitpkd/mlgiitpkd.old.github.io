@@ -328,6 +328,35 @@ div.figure2 {
   margin-right:70px;
 }
 	
+div.logo_img {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+div.logo_img.img {
+    height: 150px;
+    display: inline;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-bottom: 10px;
+}
+
     </style>
 	
 </head>
@@ -490,10 +519,24 @@ div.figure2 {
 
 <hr>
 <footer>
-    
-    </footer>
-	    
-	    
+    <p>Supported By</p><br>
+    <div class="row">
+        <div class="column">
+          <img src="images/CREDS_logo.png" height='150' class='center'>
+          <a href="https://creds.iitpkd.ac.in/">
+            <figcaption >Centre for Research and Education in Data Science (CREDS)</figcaption></a>
+        </div>
+        <div class="column">
+          <img src="images/ASAP.png" height='150' class='center'>
+          <a href="https://asapkerala.gov.in/">
+            <figcaption>Additional Skill Acquisition Programme(ASAP)</figcaption></a>
+        </div><br><br><br><br><br><br><br><br>
+	
+
+    <hr style="margin-left: 50px; margin-right: 50px; size: 3px;"><p>Florence Nightingale</p>
+    <p><a href="https://www.health.org.uk/news-and-comment/blogs/an-unlikely-data-pioneer-florence-nightingale">
+        An unlikely data pioneer: four lessons for today’s data analysts from Florence Nightingale</a></p>
+    </footer>    
 
 <script>
     // Get the modal
