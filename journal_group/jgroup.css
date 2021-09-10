@@ -1,0 +1,57 @@
+h3 {
+	color: #f39c12;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+h3 a {
+	color: #f39c12;
+}
+
+.col { width: 1200px; margin: 0 40px 30px 0; float: left; font-size: 1.1em; 
+    align-content: center; text-align: center; align-items: center; justify-content: center;   
+    margin-left: 100px;} 
+	
+
+.col table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.col td, th {
+	padding: 0.5em;
+	border: 1px solid #CCC;
+}
+
+
+.col  thead, tfoot {
+	background-color: #DDD;
+}
+
+.col tr.rowodd {
+	background-color: #FFF;
+}
+
+.col tr.roweven {
+	background-color: #F2F2F2;
+}
+
+
+/* by EL 2010-10-02 */
+#footer {
+	color: #928B81; 
+	padding: 13px 0 45px 0;
+	clear: both;
+        border-top: 9px solid;
+}
+
+/* by EL 2010-12-04 */
+#footer p {
+        font-size: 12px;
+}
+
+/* by NE 2010-11-15 */
+.narrow {
+	margin-right: 378px;
+}
