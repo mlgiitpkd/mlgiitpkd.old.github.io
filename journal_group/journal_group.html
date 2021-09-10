@@ -1,471 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!--Custom style css-->
-<!-- images/aside/eyediag.jpg -->
-<!-- THIS FILE cs_config.shtml SHOULD BE PRESENT                         -->
-<!-- in the same directory as the header and footer files                -->
-<!--                                                                     -->
-<!-- Only the following SSI variables may (optionally) be set here:      -->
-<!--   ics_banner   (a value possibly set by the user is overridden)     -->
-<!--   ics_type   (a value possibly set by the user is overridden)       -->
-<!--   ics_am_htype   (a value possibly set by the user is overridden)   -->
-<!--   ics_default_img_src   (cannot be set by the user)                 -->
-<!--   ics_default_maintainer   (cannot be set by the user)              -->
-
-<!--  possibly setting ics_banner, ics_type, ics_am_htype -->
-<!--  and even ics_default_img_src, ics_default_maintainer -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en"><head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-
-<link rel="stylesheet" type="text/css" href="reset-min.css" media="screen">
-
-
-
-
-<link rel="stylesheet" type="text/css" href="ics-web.css" media="screen">
-
-
-
-<link rel="stylesheet" type="text/css" href="ics-bibdb-web.css" media="screen">
-
-
-
-
-
-
-
-<link rel="stylesheet" type="text/css" href="pmlstyle.css" media="screen">
-
-
+<head>
+    <title>Journal Club</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="jgroup.css">
 <link rel="stylesheet" type="text/css" href="publications.css" media="screen">
+<style>
+     /* Create two columns/boxes that floats next to each other */
+     navl {
+            float: left;
+            width: 40%;
+            padding: 5%;
+        }
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+p a{
+  font-size: 20px;
+}
+p a:hover{
+    color: #f39c12;
+}
 
 
+body {
+	margin-right: 13px;
+	margin-left: 13px;
+}
+    </style>
+	
+</head>
 
-
-
-
-<script type="text/javascript" src="jquery-1.js"></script>
-<title>Machine Learning</title>
-
-
-<script charset="utf-8" src="momenttimelinetweet.js"></script><script charset="utf-8" src="timeline.js"></script></head>
 <body>
-<div id="wrap">
-<div id="header">
-
-
-
-<div class="header-top">
-<div class="header-multiling">
-</div>
-</div>
-  <div class="header-logoarea">
-  <img src="iitjjbanner.png" alt="IIT palakkad" usemap="#newbannermap"> 
-  </div>
-
-<map name="newbannermap">
-  <area shape="rect" coords="30,15,77,52" 
-  title="IIT Palakad" 
-  href="https://iitpkd.ac.in/" alt="" >
-  
-</map>
-&nbsp;
-&nbsp;
-&nbsp;
-
-
-
-<h2 class="amenu-heading">Machine Learning</h2>
-
-
-
-<ul class="amenu">
-
-
-
-
-
-
-
-<li class="amenu-item">
-<a href="https://mlgiitpkd.github.io/" title="Home page of the group">Home</a>
-</li>
-
-
-
-
-
-<!--
-<li class="amenu-item">
-<a href="https://research.cs.aalto.fi/pml/research.shtml" title="Research in the group">Research</a>
-</li>
-
-
-<li class="amenu-item">
-<a href="https://mlgiitpkd.github.io/personnel/personnel.html" title="Personnel in the group">Personnel</a>
-</li>
-
-
-
-
-
-
-
-
-<li class="amenu-item">
-<a href="https://mlgiitpkd.github.io/publications/publications.html" title="Publications by the group">Publications</a>
-</li>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="amenu-item amenu-item-highlight">
-<a href="journal_group.html" title="Journal club of the group">Journal Club</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ul> <!-- /.amenu -->
-
-
-</div> <!-- /#header -->
-<div class="section">
-<div class="aside">
-
-
-
-
-</div> <!-- /.aside -->
-<div class="spacefix"></div>
-<h2>Journal Club</h2>
-
-
-<p>
-Welcome to the Machine Learning group at IIT Palakkad. We discuss concepts, techniques and recent advancements 
-	in Machine Learning. To get added to the mailing list, please send an email to mlgiitpkd@googlegroups.com.
-<!--See a short summary of our research in these <a href="./info/pml_overview.pdf">slides</a>.-->
-
-
-
+    <header>
+    <div class="head">
+    <table>
+	<tr width=100%>
+	<td width=10%><a href="https://iitpkd.ac.in/"><img src="../images/IitPkdLogo.png" width=150px height=150px></a></td>
+	<td width=100%><h1 id="heading">Journal Club</h1></td>
+	<td width=20%><a href="https://creds.iitpkd.ac.in/"><img src="../images/CREDS_logo.png" width=100px height=100px></a></td>
+	</tr></table></div>
+	<myhr>
+   </header>
 	
-<div class="col">
-		<h3><a href="#">Upcoming talks:</a></h3>
-			<table class="sortable resizable editable">
-				<thead>
-					<tr>	 <th id="creation-date">Date</th>
-						 <th id="cost">Title</th>
-						 <th id="status">JOURNAL/CONFERENCE</th>
-					 	 <th id="status">Speaker</th>
-					 	 <th id="author">Speaker Info</th>
-						 <th id="author">Venue</th>
-					</tr>	  
-				</thead>
-				<tfoot>
-				</tfoot>
-				<tbody>
-						<tr id="N938747839">
-						<td>Aug 30, 2021</td>
-						<td> Tempered Sigmoid Activations for Deep Learning with Differential Privacy [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/17123" target="_blank">pdf</a>]<br></td>
-						<td>AAAI 2021</td>
-						<td>Yumna</td>
-						<td>Research Scholar</td>
-						<td>Online Presentation via Google Meet </td>
-						</tr>
+   <p>
+     We are part of <br>
+    <a href="https://creds.iitpkd.ac.in/" style="font-size: 18px;">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+    </p>
+   <div class="flex-container">
+ &nbsp;
+<div class="topnav"><a href="https://creds.iitpkd.ac.in/">CREDS</a><a href="index.html">About Us</a>
+    <a href="dst.html">Data Science Talk Series</a></div></div>
 
-					
-				</tbody>
-			</table>
-		
-		<p>&nbsp;</p>
-	  <div class="col">
-		<h3><a href="#">Past talks:</a></h3>
-			<table class="sortable resizable editable">
-				<thead>
-						<tr>
-						<th id="creation-date">Date</th>
-						<th id="cost">Title</th>
-						<th id="status">JOURNAL/CONFERENCE</th>
-					  	<th id="status">Speaker</th>
-					  	<th id="author">Speaker Info</th>
-						<th id="author">Venue</th>
-						</tr>
-				</thead>
-				<tfoot>
-				</tfoot>
-				<tbody> 
-					<tr id="N938747839">
-					<td>Aug 23, 2021</td>
-					<td> Unsupervised Pre-training of a Deep LSTM-based Stacked Autoencoder for Multivariate Time Series Forecasting Problems [<a href="https://www.nature.com/articles/s41598-019-55320-6.pdf" target="_blank">pdf</a>]<br></td>
-					<td>Nature 2019</td>
-					<td>Sneha</td>
-					<td>Mtech DS</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Aug 05, 2021</td>
-					<td> Modeling concept dependencies in a scientific corpus [<a href="https://aclanthology.org/P16-1082.pdf" target="_blank">pdf</a>]<br></td>
-					<td>ACL 2016</td>
-					<td>Shabana</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-							
-					<tr id="N938747839">
-					<td>July 22, 2021</td>
-					<td> Improving Unsupervised Image Clustering With Robust Learning(RUC) [<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Park_Improving_Unsupervised_Image_Clustering_With_Robust_Learning_CVPR_2021_paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>CVPR 2021</td>
-					<td>Gaurav</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-
-					<tr id="N938747839">
-					<td>July 15, 2021</td>
-					<td> Combining machine learning and process engineering physics towards enhanced accuracy and explainability of data-driven models [<a href="https://www.sciencedirect.com/science/article/pii/S0098135419313675" target="_blank">pdf</a>]<br></td>
-					<td>Computers & Chemical Engineering 2020</td>
-					<td>Dr. Mrinal</td>
-					<td>Asst. Professor</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>July 8, 2021</td>
-					<td> Quantum expectation-maximization for Gaussian mixture models [<a href="http://proceedings.mlr.press/v119/kerenidis20a.html" target="_blank">pdf</a>]<br></td>
-					<td>ICML 2020</td>
-					<td>Dr. Sahely</td>
-					<td>Asst. Professor</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Jun 17, 2021</td>
-					<td> Differential Privacy Has Disparate Impact on Model Accuracy [<a href="https://papers.nips.cc/paper/2019/file/fc0de4e0396fff257ea362983c2dda5a-Paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>NIPS 2019</td>
-					<td>Yumna</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Apr 19, 2021</td>
-					<td> Timeseries Anomaly Detection usingTemporal Hierarchical One-Class Network [<a href="https://proceedings.neurips.cc/paper/2020/file/97e401a02082021fd24957f852e0e475-Paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>NIPS 2020</td>
-					<td>Abilasha</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Apr 12, 2021</td>
-					<td> Reinforcement Learning for the Adaptive Scheduling of Educational Activities [<a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376518" target="_blank">pdf</a>]<br></td>
-					<td>CHI 2020</td>
-					<td>Shabana</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Apr 5, 2021</td>
-					<td> Self-Supervised Graph Transformer on Large-Scale Molecular Data [<a href="https://papers.nips.cc/paper/2020/file/94aef38441efa3380a3bed3faf1f9d5d-Paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>NIPS 2020</td>
-					<td>Shikha</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Mar 22, 2021</td>
-					<td> VELDA: Relating an Image Tweet’s Text and Images [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/9168" target="_blank">pdf</a>]<br></td>
-					<td>AAAI 2015</td>
-					<td>Gaurav</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-
-					<tr id="N938747839">
-					<td>Mar 15, 2021</td>
-					<td> Exploiting Kernel Sparsity and Entropy for Interpretable CNN Compression [<a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_Exploiting_Kernel_Sparsity_and_Entropy_for_Interpretable_CNN_Compression_CVPR_2019_paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>CVPR 2019</td>
-					<td>Rimmon</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Mar 1, 2021</td>
-					<td>Shape and Time Distortion Loss for Training Deep Time Series Forecasting Models [<a href="https://papers.nips.cc/paper/2019/file/466accbac9a66b805ba50e42ad715740-Paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>NIPS 2019</td>
-					<td>Abilasha S</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Feb 22, 2021</td>
-					<td>Differentially Private Bagging: Improved utility and cheaper privacy than subsample-and-aggregate [<a href="https://proceedings.neurips.cc/paper/2019/file/5dec707028b05bcbd3a1db5640f842c5-Paper.pdf" target="_blank">pdf</a>]<br></td>
-					<td>NIPS 2019</td>
-					<td>Yumna</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Feb 12, 2021</td>
-					<td>Sequencing educational content in classrooms using Bayesian knowledge tracing [<a href="https://dl.acm.org/doi/10.1145/2883851.2883885" target="_blank">pdf</a>]<br></td>
-					<td>LAK 2016</td>
-					<td>Shabana</td>
-				    	<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet </td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Feb 5, 2021</td>
-					<td>Small Data, Big Decisions: Model Selection in the Small-Data Regime [<a href="http://proceedings.mlr.press/v119/bornschein20a/bornschein20a.pdf" target="_blank">pdf</a>]<br></td>
-					<td>ICML 2020</td>
-					<td>Rimmon Bhosale</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet</td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Jan 29, 2021</td>
-					<td>Hierarchical Generation of Molecular Graphs using Structural Motifs [<a href="https://arxiv.org/pdf/2002.03230.pdf" target="_blank">pdf</a>]<br></td>
-					<td>ICML 2020</td>
-					<td>Shikha Mallick</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet</td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Jan 20, 2021</td>
-					<td> A Survey on Semi-, Self- and Unsupervised Learning for Image Classification [<a href="https://arxiv.org/abs/2002.08721" target="_blank">pdf</a>]<br></td>
-					<td>Survey paper 2020</td>
-					<td>Gaurav Jain</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet</td>
-					</tr>
-					
-					<tr id="N938747839">
-					<td>Jan 13, 2021</td>
-					<td>NeuralWaRP: Time series similarity with Warp networks [<a href="https://arxiv.org/pdf/1812.08306.pdf" target="_blank">pdf</a>]<br></td>
-					<td>SIGKDD 2019</td>
-					<td>Abilasha S</td>
-					<td>Research Scholar</td>
-					<td>Online Presentation via Google Meet</td>
-					</tr>
-					
-					
-					
-				</tbody>
-			</table>
-		</div>
-
-	
-	<div class="col">
-		<h3><a href="journal_group_2020.html">2020 Archives</a></h3>
-	</div>
+    <div class="flex-container">
+        &nbsp;
+           </div>
+           <div id="wrap">
+           <section>
+                <h2 style="font-size: 15px;font-weight: 500;text-align: center;
+                margin-left: 100px; margin-right: 100px; margin-top: 20px;">
+                    Welcome to the Machine Learning group at IIT Palakkad. We discuss concepts, techniques and 
+                    recent advancements in Machine Learning. To get added to the mailing list, 
+                    please send an email to mlgiitpkd@googlegroups.com. </h2>                  
 
 
+                    <div class="col">
+                        <h3><a href="#">Upcoming talks:</a></h3>
+                            <table class="sortable resizable editable">
+                                <thead>
+                                    <tr>	 <th id="creation-date">Date</th>
+                                         <th id="cost">Title</th>
+                                         <th id="status">JOURNAL/CONFERENCE</th>
+                                          <th id="status">Speaker</th>
+                                          <th id="author">Speaker Info</th>
+                                         <th id="author">Venue</th>
+                                    </tr>	  
+                                </thead>
+                                <tfoot>
+                                </tfoot>
+                                <tbody>
+                                        <tr id="N938747839">
+                                        <td>Aug 30, 2021</td>
+                                        <td> Tempered Sigmoid Activations for Deep Learning with Differential Privacy [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/17123" target="_blank">pdf</a>]<br></td>
+                                        <td>AAAI 2021</td>
+                                        <td>Yumna</td>
+                                        <td>Research Scholar</td>
+                                        <td>Online Presentation via Google Meet </td>
+                                        </tr></tbody></table><br><br><br></div>
 
+                    
+                    <div class="col">
+                        <h3><a href="#">Past talks:</a></h3>
+                            <table class="sortable resizable editable">
+                                <thead>
+                                        <tr>
+                                        <th id="creation-date">Date</th>
+                                        <th id="cost">Title</th>
+                                        <th id="status">JOURNAL/CONFERENCE</th>
+                                        <th id="status">Speaker</th>
+                                        <th id="author">Speaker Info</th>
+                                        <th id="author">Venue</th>
+                                        </tr>
+                                </thead>
+                                <tfoot>
+                                </tfoot>
+                                <tbody> 
+                                    <tr id="N938747839">
+                                    <td>Aug 23, 2021</td>
+                                    <td> Unsupervised Pre-training of a Deep LSTM-based Stacked Autoencoder for Multivariate Time Series Forecasting Problems [<a href="https://www.nature.com/articles/s41598-019-55320-6.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>Nature 2019</td>
+                                    <td>Sneha</td>
+                                    <td>Mtech DS</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Aug 05, 2021</td>
+                                    <td> Modeling concept dependencies in a scientific corpus [<a href="https://aclanthology.org/P16-1082.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>ACL 2016</td>
+                                    <td>Shabana</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                            
+                                    <tr id="N938747839">
+                                    <td>July 22, 2021</td>
+                                    <td> Improving Unsupervised Image Clustering With Robust Learning(RUC) [<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Park_Improving_Unsupervised_Image_Clustering_With_Robust_Learning_CVPR_2021_paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>CVPR 2021</td>
+                                    <td>Gaurav</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                
+                                    <tr id="N938747839">
+                                    <td>July 15, 2021</td>
+                                    <td> Combining machine learning and process engineering physics towards enhanced accuracy and explainability of data-driven models [<a href="https://www.sciencedirect.com/science/article/pii/S0098135419313675" target="_blank">pdf</a>]<br></td>
+                                    <td>Computers & Chemical Engineering 2020</td>
+                                    <td>Dr. Mrinal</td>
+                                    <td>Asst. Professor</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>July 8, 2021</td>
+                                    <td> Quantum expectation-maximization for Gaussian mixture models [<a href="http://proceedings.mlr.press/v119/kerenidis20a.html" target="_blank">pdf</a>]<br></td>
+                                    <td>ICML 2020</td>
+                                    <td>Dr. Sahely</td>
+                                    <td>Asst. Professor</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Jun 17, 2021</td>
+                                    <td> Differential Privacy Has Disparate Impact on Model Accuracy [<a href="https://papers.nips.cc/paper/2019/file/fc0de4e0396fff257ea362983c2dda5a-Paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>NIPS 2019</td>
+                                    <td>Yumna</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Apr 19, 2021</td>
+                                    <td> Timeseries Anomaly Detection usingTemporal Hierarchical One-Class Network [<a href="https://proceedings.neurips.cc/paper/2020/file/97e401a02082021fd24957f852e0e475-Paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>NIPS 2020</td>
+                                    <td>Abilasha</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Apr 12, 2021</td>
+                                    <td> Reinforcement Learning for the Adaptive Scheduling of Educational Activities [<a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376518" target="_blank">pdf</a>]<br></td>
+                                    <td>CHI 2020</td>
+                                    <td>Shabana</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Apr 5, 2021</td>
+                                    <td> Self-Supervised Graph Transformer on Large-Scale Molecular Data [<a href="https://papers.nips.cc/paper/2020/file/94aef38441efa3380a3bed3faf1f9d5d-Paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>NIPS 2020</td>
+                                    <td>Shikha</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Mar 22, 2021</td>
+                                    <td> VELDA: Relating an Image Tweet’s Text and Images [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/9168" target="_blank">pdf</a>]<br></td>
+                                    <td>AAAI 2015</td>
+                                    <td>Gaurav</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                
+                                    <tr id="N938747839">
+                                    <td>Mar 15, 2021</td>
+                                    <td> Exploiting Kernel Sparsity and Entropy for Interpretable CNN Compression [<a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_Exploiting_Kernel_Sparsity_and_Entropy_for_Interpretable_CNN_Compression_CVPR_2019_paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>CVPR 2019</td>
+                                    <td>Rimmon</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Mar 1, 2021</td>
+                                    <td>Shape and Time Distortion Loss for Training Deep Time Series Forecasting Models [<a href="https://papers.nips.cc/paper/2019/file/466accbac9a66b805ba50e42ad715740-Paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>NIPS 2019</td>
+                                    <td>Abilasha S</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Feb 22, 2021</td>
+                                    <td>Differentially Private Bagging: Improved utility and cheaper privacy than subsample-and-aggregate [<a href="https://proceedings.neurips.cc/paper/2019/file/5dec707028b05bcbd3a1db5640f842c5-Paper.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>NIPS 2019</td>
+                                    <td>Yumna</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Feb 12, 2021</td>
+                                    <td>Sequencing educational content in classrooms using Bayesian knowledge tracing [<a href="https://dl.acm.org/doi/10.1145/2883851.2883885" target="_blank">pdf</a>]<br></td>
+                                    <td>LAK 2016</td>
+                                    <td>Shabana</td>
+                                        <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet </td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Feb 5, 2021</td>
+                                    <td>Small Data, Big Decisions: Model Selection in the Small-Data Regime [<a href="http://proceedings.mlr.press/v119/bornschein20a/bornschein20a.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>ICML 2020</td>
+                                    <td>Rimmon Bhosale</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet</td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Jan 29, 2021</td>
+                                    <td>Hierarchical Generation of Molecular Graphs using Structural Motifs [<a href="https://arxiv.org/pdf/2002.03230.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>ICML 2020</td>
+                                    <td>Shikha Mallick</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet</td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Jan 20, 2021</td>
+                                    <td> A Survey on Semi-, Self- and Unsupervised Learning for Image Classification [<a href="https://arxiv.org/abs/2002.08721" target="_blank">pdf</a>]<br></td>
+                                    <td>Survey paper 2020</td>
+                                    <td>Gaurav Jain</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet</td>
+                                    </tr>
+                                    
+                                    <tr id="N938747839">
+                                    <td>Jan 13, 2021</td>
+                                    <td>NeuralWaRP: Time series similarity with Warp networks [<a href="https://arxiv.org/pdf/1812.08306.pdf" target="_blank">pdf</a>]<br></td>
+                                    <td>SIGKDD 2019</td>
+                                    <td>Abilasha S</td>
+                                    <td>Research Scholar</td>
+                                    <td>Online Presentation via Google Meet</td>
+                                    </tr>
+                                            
+                                                      
+                                                      
+                                                  </tbody>
+                                              </table>
+                                          </div>
+                                  
+                                      
+                                      <div class="col">
+                                          <h3><a href="journal_group_2020.html">2020 Archives</a></h3>
+                                      </div>
+                                 </p></div></div><br><br><br><br><hr> <!-- /.section -->
+                                </div> <!-- /#wrap -->
+                                  
+                              <!--   
+                                  
+                                  
+                                  <iframe scrolling="no" allowtransparency="true" src="machine_learning_css/widget_iframe.html" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
+                                  
+                                      © 2019 GitHub, Inc.
+                                      Terms
+                                      Privacy
+                                      Security
+                                      Status
+                                      Help
+                                  
+                                      Contact GitHub
+                                      Pricing
+                                      API
+                                      Training
+                                      Blog
+                                      About-->
+                                  
 
-<!-- To generate a new entry copy the HTML below
-<h4>dd.mm.yyyy</h4>
-<p>
-News text
-</p>
--->
-
-
-
-
-<!--<h4><a href="old_news.shtml">Earlier News</a></h4>-->
-<p>
-</p><p>
-</p><p>
-</p><p>
-</p><p>
-
-
-</p></div>
-</div> <!-- /.section -->
-<div id="footer">
-<p>
-
-
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;Maintained by Machine Learning Group
-</p>
-</div> <!-- /#footer -->
-</div> <!-- /#wrap -->
-
-
-
-
-
-<iframe scrolling="no" allowtransparency="true" src="machine_learning_css/widget_iframe.html" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
-
-    © 2019 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
+                        
+    </section>
+       </body>
+       </html>
