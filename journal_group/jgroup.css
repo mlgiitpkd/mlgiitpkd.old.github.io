@@ -24,6 +24,16 @@ h3 a {
 	border: 1px solid #CCC;
 }
 
+.col td a {
+	color: #202020;
+}
+
+.col td a:hover {
+	color: #f39c12;
+}
+.col td a:active {
+	color: #f39c12;
+}
 
 .col  thead, tfoot {
 	background-color: #DDD;
