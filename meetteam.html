@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Research Talks</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="multimodal.css">
+<link rel="stylesheet" href="common.css">
+
+<style>
+ 
+.quote{
+    width:auto;
+    display:table;
+    margin-top: 20px ;
+    padding: 25px;
+    background: #e8e8e8 ;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #c3c6cA;
+    color: #333c12;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.25em;
+    border-left-width: 10px;
+    border-left-color: #f9b332;
+}
+
+.credits {
+    font-weight: bold;
+    text-align: right;
+}
+
+.quote a{
+    text-align-last: justify ;
+    float: right;
+    color: #ecac20;
+    /*text-decoration: none;*/
+}
+	
+.quote a:active {
+    color: #43464A;
+}
+
+.quote a:hover {
+    color:#43464A;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-top: 20px ;
+    margin-left: 50px;
+    color: #43464A;
+    margin-bottom: 20px;
+    text-align: center;
+}	
+
+h4{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:500;
+    text-align: center;    
+}
+
+h6{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:600;
+    text-align: center;    
+}
+
+h5{
+    background-color: #ecac20;
+    font-size: 1.75em;
+    margin-top: 15px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;   
+    height: 5px;
+    text-decoration: underline  ;
+}
+
+div.data{
+    text-align: center;
+}
+div.data a{
+    font-size: 1.75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+}
+	
+div.date{
+    
+	
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    padding-bottom: 5px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #404040;
+    background-size: 50% auto;
+    height: 100%;
+    color: #f39c12;
+    text-align: center; 
+	
+}
+
+div.speaker_img {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.speaker_img.img {
+    width: 200px;
+}
+.center{
+    border-radius: 50%;
+}
+
+div.speaker_info{
+	text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+div.speaker_info a{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+	
+div.speaker_info a:active {
+    color: #f9b332;
+}
+
+div.speaker_info a:hover {
+    color: #f39c12;
+}
+	
+.talks{
+    display: inline;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    padding: 2px;
+    border: 0px solid #c3c6cA;
+    color: #333c12;
+    font-family: 'Times New Roman';
+}
+#talksinfo
+{
+    font-size:18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#talksinfo a
+{
+    font-size:18px;
+    font-weight: normal;
+}
+
+#college {
+    font-size:18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+#college a
+{
+    font-size:18px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+div.zoomlink{
+    margin: 5px;
+    text-align: center;
+    display: block;
+    box-sizing:content-box;
+    justify-content: center;
+}
+div.zoomlink a{
+    font-size: 20px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+div.zoomlink a:active{
+    color: #404040;
+}
+
+div.zoomlink a:hover{
+    color: #404040;
+}	
+
+div.popup{
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 3px;
+  background-color: #202020;
+  color: white;
+  font-size: 25px;
+  text-decoration:wavy;
+  font-weight: bold;
+}
+
+footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a{
+    font-size: 20px;
+    font-weight: normal;
+    color: #c3c6cA;
+}
+
+footer a:active{
+    color: #f9b332;
+}
+
+footer a:hover{
+    color: #f9b332;
+}		
+	
+footer div.popup button.myBtn_multi{
+    padding: 10px 10px; font-size:20px;  font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f39c12;
+        background-color: #202020; 
+        border: 2px solid; border-color: #f39c12;
+}
+
+footer div.popup button.myBtn_multi:hover{
+    color: #c3c6cA;
+    border-color: #c3c6cA;
+}	
+	
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+p a{
+  font-size: 20px;
+}
+p a:hover{
+    color: #f39c12;
+}
+	
+counter {
+    margin-right: 50px;
+    padding: 5px;
+	font-size: 25px;
+	height: 100%;
+	color: #f39c12;
+	text-align: center; 
+	background-color: #404040;
+}
+
+div.counter_align{
+	font-size: 25px;
+    margin-top:20px;
+	text-align:right;
+	}
+	
+#credsids{
+	float: left;    
+	margin: 0 0 0 15px;
+	}
+	
+
+
+	#navbar img {
+		display: block;
+		width: 200px;
+		height: 200px;
+		margin: auto;
+
+	}
+
+#ps {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+	margin-right:0px;
+    
+}
+div.figure1 {
+  border-top: none;
+  padding-top: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+  margin-right:90px;
+}
+div.figure2 {
+  border-top: none;
+  padding-top: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+  margin-right:70px;
+}
+	
+div.logo_img {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+div.logo_img.img {
+    height: 150px;
+    display: inline;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-bottom: 10px;
+}
+
+div.col {
+    color: #f39c12;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 10%;
+    display: block;
+  }
+}
+
+
+.columncard {
+	display: block;
+	display: inline-block;
+	float: center;
+
+	width: 20%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+	text-align:center;
+}
+
+.cust-grid{
+
+display: flex;
+
+justify-content: center;
+
+flex-flow:row wrap;
+
+}
+	
+    </style>
+	
+</head>
+
+<body>
+    <header>
+	<!--<div id="ps">Supported by</div>-->
+    <table>
+	<tr width=100%>
+	<td width=20%><a href="https://iitpkd.ac.in/"><img src="images/IitPkdLogo.png" width=200px height=200px></a></td>
+	<td width=100%><h1 id="heading">Florence Nightingale Data Science Talk Series</h1></td>
+	<td width=20%><a href="https://creds.iitpkd.ac.in/"><img src="images/CREDS_logo.png" width=100px height=100px></a></td>
+	<td width=20%><a href="https://asapkerala.gov.in/"><img src="images/ASAP.png" width=250px height=150px id="asaplogo"></a></td>
+	</tr>
+    </table>
+	
+	<myhr>
+   </header>
+   
+ <!--<p>
+    We are part of <br>
+   <a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+   </p>-->
+	
+   <div class="flex-container">
+ &nbsp;
+<div class="topnav"><a href="https://creds.iitpkd.ac.in/">CREDS</a><a href="index.html">Organizers</a>
+    <a href="dst.html">Data Science Talk Series</a>
+	</div></div>
+
+    <div class="flex-container">
+        &nbsp;
+           </div>
+
+</div>
+    </div>
+
+<h1 style="text-align:center">Meet The Team</h1>
+
+<br>
+
+<div class="row cust-grid">
+  <div class="columncard">
+    <div class="card">
+      <img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/mrinals.png?itok=rdq74_0h" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2><a href="https://nmrinl.github.io/">Dr. Mrinal Kanti Das</a></h2>
+        <p class="title">Assistant Professor</p>
+		<p class="title">Mentor</p>
+        <!--<p><button class="button">Personal Webpage</button></p>-->
+      </div>
+    </div>
+  </div>
+  
+  <div class="columncard">
+    <div class="card">
+      <img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2018-01/Screenshot%20from%202018-01-22%2009-39-14.png?itok=pqD4vWfU" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2><a href="https://iitpkd.ac.in/people/sahely">Dr. Sahely Bhadra</a></h2>
+        <p class="title">Assistant Professor</p>
+		<p class="title">Mentor</p>
+        <!--<p><button class="button">Personal Webpage</button></p>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row cust-grid">
+  <div class="columncard">
+    <div class="card">
+      <img src="https://iitpkd.ac.in/sites/default/files/styles/profile_page_image/public/pictures/2020-05/gj.jpg?itok=eTocUtHw" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2><a href="https://gauravjain10.github.io/resume/">Gaurav Jain</a></h2>
+        <p class="title">Research Scholar</p>
+		<p class="title">Machine Learning</p>
+		<p class="title">Site Development</p>
+        <!--<p><button class="button">Personal Webpage</button></p>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="columncard">
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Pallavi.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Pallavi Hoge</h2>
+        <p class="title">Mtech</p>
+		<p class="title">Data Science</p>
+		<p class="title">Site Development</p>
+        <!--<p><button class="button">Personal Webpage</button></p>-->
+      </div>
+    </div>
+  </div>
+  
+  <div class="columncard">
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/akshatha.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Akshatha</h2>
+        <p class="title">Mtech</p>
+		<p class="title">Data Science</p>
+		<p class="title">Social Media Editor</p>
+        <!--<p><button class="button">Personal Webpage</button></p>-->
+      </div>
+    </div>
+  </div>
+
+
+<div class="columncard">
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/mlgiitpkd/mlgiitpkd.github.io/master/assets/images/Chandu.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Narthu Chandrasekhar</h2>
+        <p class="title">Mtech</p>
+		<p class="title">Data Science</p>
+		<p class="title">Campaign Advertiser</p>
+        <!--<p><button class="button">Personal Webpage</button></p>-->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<hr>
+<footer>
+    <p>Supported By</p><br>
+    <div class="row">
+        <div class="column">
+          <img src="images/CREDS_logo.png" height='150' class='center'>
+          <a href="https://creds.iitpkd.ac.in/">
+            <figcaption >Centre for Research and Education in Data Science (CREDS)</figcaption></a>
+        </div>
+        <div class="column">
+          <img src="images/ASAP.png" height='150' class='center'>
+          <a href="https://asapkerala.gov.in/">
+            <figcaption>Additional Skill Acquisition Programme(ASAP)</figcaption></a>
+        </div><br><br><br><br><br><br><br><br>
+	
+
+    <hr style="margin-left: 50px; margin-right: 50px; size: 3px;"><p>Florence Nightingale</p>
+    <p><a href="https://www.health.org.uk/news-and-comment/blogs/an-unlikely-data-pioneer-florence-nightingale">
+        An unlikely data pioneer: four lessons for today’s data analysts from Florence Nightingale</a></p>
+    </footer>    
+	    
+	    
+
+
+
+
+
+</body>
+</html>
