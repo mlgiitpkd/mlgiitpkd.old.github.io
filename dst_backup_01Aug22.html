@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Research Talks</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="multimodal.css">
+<link rel="stylesheet" href="common.css">
+
+<style>
+ 
+.quote{
+    width:auto;
+    display:table;
+    margin-top: 20px ;
+    padding: 25px;
+    background: #e8e8e8 ;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #c3c6cA;
+    color: #333c12;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.25em;
+    border-left-width: 10px;
+    border-left-color: #f9b332;
+}
+
+.credits {
+    font-weight: bold;
+    text-align: right;
+}
+
+.quote a{
+    text-align-last: justify ;
+    float: right;
+    color: #ecac20;
+    /*text-decoration: none;*/
+}
+	
+.quote a:active {
+    color: #43464A;
+}
+
+.quote a:hover {
+    color:#43464A;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-top: 20px ;
+    margin-left: 50px;
+    color: #43464A;
+    margin-bottom: 20px;
+    text-align: center;
+}	
+
+h4{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:500;
+    text-align: center;    
+}
+
+h6{
+    font-size: 16px;
+    margin-top: 5px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #23262A;
+    margin-bottom: 5px;
+    font-weight:600;
+    text-align: center;    
+}
+
+h5{
+    background-color: #ecac20;
+    font-size: 1.75em;
+    margin-top: 15px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;   
+    height: 5px;
+    text-decoration: underline  ;
+}
+
+div.data{
+    text-align: center;
+}
+div.data a{
+    font-size: 1.75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+}
+	
+div.date{
+    
+	
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    padding-bottom: 5px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #404040;
+    background-size: 50% auto;
+    height: 100%;
+    color: #f39c12;
+    text-align: center; 
+	
+}
+
+div.speaker_img {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.speaker_img.img {
+    width: 200px;
+}
+.center{
+    border-radius: 50%;
+}
+
+div.speaker_info{
+	text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+div.speaker_info a{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px ;
+    height: 40px;
+    color: #505050;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+	
+div.speaker_info a:active {
+    color: #f9b332;
+}
+
+div.speaker_info a:hover {
+    color: #f39c12;
+}
+	
+.talks{
+    display: inline;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    padding: 2px;
+    border: 0px solid #c3c6cA;
+    color: #333c12;
+    font-family: 'Times New Roman';
+}
+#talksinfo
+{
+    font-size:18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#talksinfo a
+{
+    font-size:18px;
+    font-weight: normal;
+}
+
+#college {
+    font-size:18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+#college a
+{
+    font-size:18px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+div.zoomlink{
+    margin: 5px;
+    text-align: center;
+    display: block;
+    box-sizing:content-box;
+    justify-content: center;
+}
+div.zoomlink a{
+    font-size: 20px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+div.zoomlink a:active{
+    color: #404040;
+}
+
+div.zoomlink a:hover{
+    color: #404040;
+}	
+
+div.popup{
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 3px;
+  background-color: #202020;
+  color: white;
+  font-size: 25px;
+  text-decoration:wavy;
+  font-weight: bold;
+}
+
+footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a{
+    font-size: 20px;
+    font-weight: normal;
+    color: #c3c6cA;
+}
+
+footer a:active{
+    color: #f9b332;
+}
+
+footer a:hover{
+    color: #f9b332;
+}		
+	
+footer div.popup button.myBtn_multi{
+    padding: 10px 10px; font-size:20px;  font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f39c12;
+        background-color: #202020; 
+        border: 2px solid; border-color: #f39c12;
+}
+
+footer div.popup button.myBtn_multi:hover{
+    color: #c3c6cA;
+    border-color: #c3c6cA;
+}	
+	
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+p a{
+  font-size: 20px;
+}
+p a:hover{
+    color: #f39c12;
+}
+	
+counter {
+    margin-right: 50px;
+    padding: 5px;
+	font-size: 25px;
+	height: 100%;
+	color: #f39c12;
+	text-align: center; 
+	background-color: #404040;
+}
+
+div.counter_align{
+	font-size: 25px;
+    margin-top:20px;
+	text-align:right;
+	}
+	
+#credsids{
+	float: left;    
+	margin: 0 0 0 15px;
+	}
+	
+
+
+	#navbar img {
+		display: block;
+		width: 200px;
+		height: 200px;
+		margin: auto;
+
+	}
+
+#ps {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+	margin-right:0px;
+    
+}
+div.figure1 {
+  border-top: none;
+  padding-top: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+  margin-right:90px;
+}
+div.figure2 {
+  border-top: none;
+  padding-top: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:10px;
+  margin-right:70px;
+}
+	
+div.logo_img {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+div.logo_img.img {
+    height: 150px;
+    display: inline;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-bottom: 10px;
+}
+
+div.col {
+    color: #f39c12;
+}
+
+    </style>
+	
+</head>
+
+<body>
+    <header>
+	<!--<div id="ps">Supported by</div>-->
+    <table>
+	<tr width=100%>
+	<td width=20%><a href="https://iitpkd.ac.in/"><img src="images/IitPkdLogo.png" width=200px height=200px></a></td>
+	<td width=100%><h1 id="heading">Florence Nightingale Data Science Talk Series</h1></td>
+	<td width=20%><a href="https://creds.iitpkd.ac.in/"><img src="images/CREDS_logo.png" width=100px height=100px></a></td>
+	<td width=20%><a href="https://asapkerala.gov.in/"><img src="images/ASAP.png" width=250px height=150px id="asaplogo"></a></td>
+	</tr>
+    </table>
+	
+	<myhr>
+   </header>
+   
+   <!--<p>
+    We are part of <br>
+   <a href="https://creds.iitpkd.ac.in/">The Centre for Research and Education in Data Science (CREDS), IIT Palakkad</a>
+   </p>-->
+   <div class="flex-container">
+ &nbsp;
+<div class="topnav"><a href="https://creds.iitpkd.ac.in/">CREDS</a><a href="index.html">IIT PKD ML Group</a>
+	<a href="dst_past.html">Past Talk Sessions</a><!--<a href="feedback.html">Feedback Form</a>--></div></div></div>
+<!--<a href="registration.html">Free Entry Registration Form</a>-->
+    <div class="flex-container">
+        &nbsp;
+           </div>
+
+</div>
+    </div>
+<div class = 'quote'>
+    So never lose an opportunity of urging a practical beginning, however small, 
+    for it is wonderful how often in such matters the mustard-seed germinates and roots itself. 
+    <a href="https://thisisstatistics.org/florence-nightingale-the-lady-with-the-data/#:~:text=Florence%20Ni\ghtingale%20established%20much%20needed,a%20lot%20of%20new%20data.&text=By%20using%20applie
+    d%20statistical%20methods,work%20in%20statistics%20saved%20lives."><div class='credits'> – Florence Nightingale </div></a>
+</div>
+
+<div class="counter_align">Countdown: <counter id="demo"></counter></div>
+<h3>Welcome Data Science Enthusiasts!!!</h3>
+<h4>Stay tuned for our upcoming talks</h4>
+<h4>Last Saturday of Every Month</h4>
+<h6>11 AM IST</h6>
+<div class='zoomlink'><a href="https://zoom.us/j/92885815960">Zoom Meeting Link</a></div>
+<h4><b>Open To All</b></h4>
+<h4></h4>
+<h5></h5><br><br>
+        
+	
+        
+
+
+
+            
+
+        <div class='date'>Jul 30th 2022</div>
+                    <div class="speaker_img"><img src="images/gkp.JPG" width='250' alt='Avator' class='center'></div>
+                    <div class="speaker_info"><a href="https://sites.google.com/view/girish-palshikar/Home">Mr. Girish Palshikar</a></div>
+                    <div class = 'talks'>
+                    <div id="talksinfo">Chief Scientist, leads the Machine Learning R&D Group.</div>
+                    <div id="college"><a>TCS Research, TRDDC, Pune, India</a></div>
+                    <div id="talksinfo">Research Areas : <a>Machine learning, Natural language processing,</a></div>
+                    <div id="talksinfo"><a> Data/Text Mining, computational law, human resources management, narrative text analysis, </a></div>
+                    <div id="talksinfo"><a>Theoretical Computer Science and their applications to various domains including fraud and money laundering detection,   
+                    </a></div>
+                    <div id="talksinfo"><a>information and knowledge extraction from documents etc.</a></div>
+                    <br><div id="talksinfo">Title: <a style='font-weight: bold;'>Fraud detection</a></div>
+                </div>
+
+		<div class='popup'>
+                    <button class="myBtn_multi" 
+                    style='padding: 15px 15px;font-size:16px; 
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 18px;
+                    font-weight:500 ;'>
+                        Read Abstract</button>
+                    <div  class="modal modal_multi">
+                        <div class="modal-content">
+                            <span class="close close_multi">×</span>
+                            <div class="modal-header"><div class="title">Frauds and Machine Learning Techniques for Their Detection</div></div>
+                            <div class="modal-body">
+                                Almost all government functions and companies in all business domains suffer from frauds of various kinds. Organizations collect huge amounts of data covering their transactions, operations, stores, suppliers, employees and financial activities. Instances of frauds tend to leave tell-tale traces in these business databases. Given the size and complexity of these databases, and constant emergence of newer methods for frauds, it has become imperative to design and use machine learning algorithms for detecting characteristic patterns and signs of frauds. Since instances of known frauds are few, we need unsupervised techniques for their detection, which efficiently use unlabelled data for detecting even new and unknown types of frauds. In part (1) of this talk, we cover basics of frauds and explain some anomaly detection techniques that can be used for fraud detection. In part (2), we present ML algorithms to detect (a) collusion in stock market trading, and (b) tax evasion.
+                            </div></div><div id="overlay"></div></div></div><br><br><br><br>
+
+               
+        <div class='date'>Aug 27th 2022</div>
+                    <div class="speaker_img"><img src="images/br.jpg" width='250' alt='Avator' class='center'></div>
+                    <div class="speaker_info"><a href="http://www.cse.iitm.ac.in/~ravi/">Prof. Balaraman Ravindran</a></div>
+                    <div class = 'talks'>
+                    <div id="talksinfo">Mindtree Faculty Fellow and a professor at the Department of Computer Science and Engineering,</div>
+                    <div id='talksinfo'>Head the Robert Bosch Centre for Data Science and AI</div>
+                    <div id="college"><a>Indian Institute of Technology Madras</a></div>
+                    <div id="talksinfo">Research Areas : <a>Machine learning,</a></div>
+                    <div id="talksinfo"><a>Spatio-temporal Abstractions in Reinforcement Learning to social network analysis and Data/Text Mining.</a></div>
+                    <br><div id="talksinfo">Title: <a style='font-weight: bold;'>Reinforcement Learning with Structured Actions and Policies</a></div>
+                </div>
+
+                <div class='popup'>
+                    <button class="myBtn_multi" 
+                    style='padding: 15px 15px;font-size:16px; 
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 18px;
+                    font-weight:500 ;'>
+                        Read Abstract</button>
+                    <div  class="modal modal_multi">
+                        <div class="modal-content">
+                            <span class="close close_multi">×</span>
+                            <div class="modal-header"><div class="title">Reinforcement Learning with Structured Actions and Policies</div></div>
+                            <div class="modal-body">
+                                Deep Reinforcement Learning has been very successful in solving a variety of hard problems. 
+                                But many RL architectures treat the action as coming from an unordered set or from a bounded interval. 
+                                It is often the case that the actions and policies have a non-trivial structure that can be exploited 
+                                for more efficient learning. This ranges from game playing settings where the same action is repeated multiple times, 
+                                to supply-chain problems where the action space has a combinatorial structure, to problems that require a 
+                                hierarchical decomposition to solve effectively. In this talk, I will present several scenarios in which taking advantage 
+                                of the structure leads to more efficient learning. In particular, our talk about some of our recent work on action repetition,
+                                 actions that are related via a graph structure, ensemble policies, 
+                                and policies learnt through a combination of hierarchical planning and learning.
+                            </div></div><div id="overlay"></div></div></div><br><br><br><br>
+                 
+                
+                 
+        
+
+<br><br><br><br><br><br><br><br>
+<div class="col">
+		<h3><a href="dst_past.html">Past Talk Archives</a></h3>
+</div>
+<br>
+
+<hr>
+<footer>
+    <p>Supported By</p><br>
+    <div class="row">
+        <div class="column">
+          <img src="images/CREDS_logo.png" height='150' class='center'>
+          <a href="https://creds.iitpkd.ac.in/">
+            <figcaption >Centre for Research and Education in Data Science (CREDS)</figcaption></a>
+        </div>
+        <div class="column">
+          <img src="images/ASAP.png" height='150' class='center'>
+          <a href="https://asapkerala.gov.in/">
+            <figcaption>Additional Skill Acquisition Programme(ASAP)</figcaption></a>
+        </div><br><br><br><br><br><br><br><br>
+	
+
+    <hr style="margin-left: 50px; margin-right: 50px; size: 3px;"><p>Florence Nightingale</p>
+    <p><a href="https://www.health.org.uk/news-and-comment/blogs/an-unlikely-data-pioneer-florence-nightingale">
+        An unlikely data pioneer: four lessons for today’s data analysts from Florence Nightingale</a></p>
+    </footer>    
+
+<script>
+    // Get the modal
+    var modalparent = document.getElementsByClassName("modal_multi");
+
+    // Get the button that opens the modal
+    var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+    // Get the <span> element that closes the modal
+    var span_close_multi = document.getElementsByClassName("close_multi");
+
+    // When the user clicks the button, open the modal
+    function setDataIndex() {
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].setAttribute('data-index', i);
+            modalparent[i].setAttribute('data-index', i);
+            span_close_multi[i].setAttribute('data-index', i);
+        }
+    }
+
+
+
+    for (i = 0; i < modal_btn_multi.length; i++)
+    {
+        modal_btn_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span_close_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "none";
+        };
+
+    }
+
+    window.onload = function() {
+
+        setDataIndex();
+    };
+
+    window.onclick = function(event) {
+        if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+            modalparent[event.target.getAttribute('data-index')].style.display = "none";
+        }
+
+        // OLD CODE
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// Get the modal
+
+    var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+    var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+    btn.onclick = function() {
+
+        modal.style.display = "block";
+    }
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+</script>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 30, 2022 11:00:00").getTime();
+	
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+</body>
+</html>
